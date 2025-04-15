@@ -1,0 +1,838 @@
+@charset "utf-8";
+
+/* Media Queries */
+
+
+	
+@media only screen and (max-width: 767px) { 
+   .contact{
+		/* width:auto; */
+		margin-left: 20%;
+	}
+	.logo_responstive img{
+		width: 42%;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #fff;
+		 margin-top: -8%;
+		margin-right: 9%;
+	}
+	.latestUpdatesContainer {
+		background: none;
+		padding-left: 0px;
+		margin-left: 0px;
+	}
+	.marquee_top{
+		margin-top: 90px;
+	}
+	.contact_liverate{
+		width:auto;
+	}
+	.liverateimg img{
+		/* width:100%; */
+		margin-left: 20%;
+	}
+	.liverateimg {
+		margin-left: 0%; 
+		margin-top: 0%; 
+	}
+	.headertable1 th {
+		font-size: 15px;
+	}
+	.table-responsivetop1{
+		/* margin-left: -2%; */
+		/* width: 399px; */
+	}
+	.table1 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.table2 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.table3 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.ratevalue2 {
+		font-size: 25px !important;
+	}
+	.headertable2 th {
+		font-size: 16px;
+	}
+	.table-responsivetop2{
+		/* margin-left: -2%; */
+		margin-top: 3px;
+		/* width: 400px; */
+	}
+	.table4 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.table5 td{
+		font-size: 20px;
+		/* padding: 5px !important; */
+	}
+	.table6 td{
+		font-size: 20px;
+		/* padding: 5px !important; */
+	}
+	.ratevalue5 {
+		font-size: 28px !important;
+	}
+	.headertable3 th {
+		font-size: 17px;
+	}
+	.table-responsivetop3{
+		margin-top: -3px;
+		/* margin-left: -2%; */
+		/* width: 400px; */
+	}
+	.table7 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.table8 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.copyright{
+		text-align:center;
+		font-size: 12px;
+	}
+	.terms{
+		text-align:center;
+		margin-left: -7px;
+		font-size: 12px;
+	}
+	.powerdby{
+		text-align:center;	
+		font-size: 12px;		
+	}
+	.contactliverate{
+		/* height: 231px; */
+	    font-size: 15px;
+	}
+	.lastupdate{
+		font-size: 11px;
+	}
+	.time{
+		font-size: 12px;
+	}
+	.silver {
+		margin-left: 233px;
+	}
+	.ios img {
+		margin-left: 69px;
+		margin-top: 0px;
+	}
+	.ios{
+		float: none;
+	}
+	.app {
+		float: none; 
+		margin-top: -10%;
+		margin-left:60%;
+	}
+	.mjdmahead{
+		width: 351px;
+		margin-left: 20%;
+		margin-top: 0%;
+	}
+	.categories{
+		margin-left: 16%;
+	}
+	.reachus{
+		float:none;
+	}
+	.newyork1{
+		float: left;
+		color: #fff;
+		margin-top:2%;
+	    margin-left: 20px;
+	}
+	.londin1{
+		float: left;
+		color: #fff;
+		margin-top:2%;
+	    margin-left: 2%;
+	}
+	.india1{
+		color: #fff;
+		margin-top:2%;
+	}
+	.appLinkContainer1{
+		margin-left: 70%;
+		margin-top: -9%;
+		margin-bottom: 10px;
+	}
+	.india1 img{
+		margin-left: 6px;
+	}
+	.india1 span{
+		margin-left: 6px;
+	}
+	.headerslider{
+	    margin-top: 12%;	
+	}
+	.banner{
+		margin-top:13%;
+	}
+	.modal-content {
+		margin-top: 7%;
+		width: 92%;
+		margin-left: 2%;
+	}
+	.booking {
+		margin-top: 6%;
+		margin-bottom: 5px;
+	}
+	.mjdmarate{
+	    width: 87px; 	
+	}
+}
+@media only screen and (max-width: 670px) { 
+	.contact{
+		/* width:auto; */
+		margin-left: 20%;
+	}
+	.logo_responstive img{
+		width: 41%;
+	}
+	.body_content{
+		margin-top:-29px;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #fff;
+		 margin-top: -8%;
+		margin-right: 9%;
+	}
+	.latestUpdatesContainer {
+		background: none;
+		padding-left: 0px;
+		margin-left: 0px;
+	}
+	.marquee_top{
+		margin-top: 92px;
+	}
+	.contact_liverate{
+		width:auto;
+	}
+	.liverateimg img{
+		/* width:100%; */
+		margin-left: 20%;
+	}
+	.headertable1 th {
+		font-size: 15px;
+	}
+	.table-responsivetop1{
+		/* margin-left: -2%; */
+		/* width: 399px; */
+	}
+	.table1 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.table2 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.table3 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.ratevalue2 {
+		font-size: 25px !important;
+	}
+	.headertable2 th {
+		font-size: 16px;
+	}
+	.table-responsivetop2{
+		/* margin-left: -2%; */
+		margin-top: 3px;
+		/* width: 400px; */
+	}
+	.table4 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.table5 td{
+		font-size: 20px;
+		/* padding: 5px !important; */
+	}
+	.table6 td{
+		font-size: 20px;
+		/* padding: 5px !important; */
+	}
+	.ratevalue5 {
+		font-size: 28px !important;
+	}
+	.headertable3 th {
+		font-size: 17px;
+	}
+	.table-responsivetop3{
+		margin-top: -3px;
+		/* margin-left: -2%; */
+		/* width: 400px; */
+	}
+	.table7 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.table8 td{
+		font-size: 18px;
+		/* padding: 5px !important; */
+	}
+	.copyright{
+		text-align:center;
+		font-size: 12px;
+	}
+	.terms{
+		text-align:center;
+		margin-left: -7px;
+		font-size: 12px;
+	}
+	.powerdby{
+		text-align:center;	
+		font-size: 12px;		
+	}
+	.contactliverate{
+		/* height: 231px; */
+	    font-size: 15px;
+	}
+	.lastupdate{
+		font-size: 11px;
+	}
+	.time{
+		font-size: 12px;
+	}
+	.silver {
+		margin-left: 233px;
+	}
+	.ios img {
+		margin-left: 69px;
+		margin-top: 0px;
+	}
+	.ios{
+		float: none;
+	}
+	.app {
+		float: none; 
+		margin-top: -10%;
+		margin-left:60%;
+	}
+	.mjdmahead{
+		width: 351px;
+		margin-left: 20%;
+	    margin-top: 2%;
+	}
+	.categories{
+		margin-left: 16%;
+	}
+	.reachus{
+		float:none;
+	}
+	.flog {
+		margin-top: 20px;
+	}
+	.designedBy{
+		text-align:center;
+	}
+	.newyork1{
+		float: left;
+		color: #fff;
+		margin-top: 0px;
+		margin-left: 21px;
+	}
+	.londin1{
+		float: left;
+		color: #fff;
+		margin-top: 0px;
+		margin-left: 16px;
+	}
+	.india1{
+		color: #fff;
+		margin-top:0%;
+	}
+	.appLinkContainer1{
+		margin-left: 33%;
+		margin-top: -2%;
+		margin-bottom: 10px;
+	}
+	.india1 img{
+		margin-left: 6px;
+	}
+	.india1 span{
+		margin-left: 6px;
+	}
+	.headerslider {
+		margin-top: 12%;
+	}
+	.banner{
+		margin-top:14%;
+	}
+	.captcha{
+	    width: 55%;	
+	}
+	.booking {
+		margin-top: 6%;
+	}
+	.cja {
+		width: 277px;
+		float: left;
+		margin-top: 0%;
+		margin-left: 0px;
+		margin-right: 10px;
+	}
+	.cja {
+		width: 252px;
+	}
+}
+@media only screen and (max-width: 480px) { 
+	
+	.contact_liverate{
+		width:auto;
+		margin-left: 0%;
+	}
+	.liverateimg img{
+		width:100%;
+		margin-left: 0%;
+	}
+	.headertable1 th {
+		font-size: 12px;
+	}
+	.table-responsivetop1{
+		margin-left: 0%;
+		/* width: 399px; */
+	}
+	.table1 td{
+		font-size: 15px;
+	}
+	.table2 td{
+		font-size: 15px;
+	}
+	.table3 td{
+		font-size: 15px;
+	}
+	.ratevalue2 {
+		font-size: 25px !important;
+	}
+	.headertable2 th {
+		font-size: 13px;
+	}
+	.table-responsivetop2{
+		margin-left: 0%;
+		margin-top: 3px;
+		/* width: 400px; */
+	}
+	.table4 td{
+		font-size: 14px;
+		
+	}
+	.table5 td{
+		font-size: 14px;
+	}
+	.table6 td{
+		font-size: 18px;
+	}
+	.ratevalue5 {
+		font-size: 22px !important;
+	}
+	.headertable3 th {
+		font-size: 14px;
+	}
+	.table-responsivetop3{
+		margin-top: -3px;
+		margin-left: 0%;
+		/* width: 400px; */
+	}
+	.table7 td{
+		font-size: 16px;
+		padding: 5px !important;
+	}
+	.table8 td{
+		font-size: 16px;
+	}
+	.copyright{
+		text-align:center;
+		font-size: 12px;
+	}
+	.terms{
+		text-align:center;
+		margin-left: -7px;
+		font-size: 12px;
+	}
+	.powerdby{
+		text-align:center;	
+		font-size: 12px;		
+	}
+	.contactliverate{
+		/* height: 231px; */
+	    font-size: 15px;
+	}
+	.lastupdate{
+		font-size: 11px;
+	}
+	.time{
+		font-size: 12px;
+	}
+	.silver {
+		margin-left: 233px;
+	}
+	.ios img {
+		margin-left: 69px;
+		margin-top: 0px;
+	}
+	.ios{
+		float: none;
+	}
+	.app {
+		float: none; 
+		margin-top: 4%;
+		margin-left: 28%;
+	}
+	.mjdmahead{
+		width: auto;
+	    margin-left: 0%;
+	}
+	.categories{
+		margin-left: 0%;
+	}
+	.reach{
+		margin-top: 2%;
+	}
+	.newyork1{
+		float: left;
+		color: #fff;
+		margin-top:10px
+	}
+	.londin1{
+		float: left;
+		color: #fff;
+		margin-top:10px;
+	    margin-left: 3px;
+	}
+	.india1{
+		color: #fff;
+		margin-top:2%;
+	}
+	.appLinkContainer1{
+		margin-left: 34%;
+		margin-top: 4%;
+		margin-bottom: 10px;
+	}
+	.headerslider {
+		margin-top: 16%;
+	}
+	.banner{
+		margin-top: 17%;
+	}
+	.captcha{
+	    width: 40%;	
+	}
+	#BankDetail td {
+		font-size: 15px;
+	}
+	.cja {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 430px) { 
+	
+	.headertable1 th {
+		font-size: 10px;
+		padding: 3px !important;
+	}
+	.table-responsivetop1{
+		margin-left: -2%;
+		width: 401px;
+	}
+	.table1 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table2 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table3 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.ratevalue2 {
+		font-size: 25px !important;
+	}
+	.headertable2 th {
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table-responsivetop2{
+		margin-left: -2%;
+		margin-top: 3px;
+		width: 400px;
+	}
+	.ratevalue10 {
+		font-size: 8px !important;
+	}
+	.table4 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table5 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table6 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.ratevalue5 {
+		font-size: 16px !important;
+	}
+	.headertable3 th {
+		font-size: 12px;
+		padding: 3px !important;
+	}
+	.table-responsivetop3{
+		margin-left: -2%;
+		margin-top: -3px;
+		width: 400px;
+	}
+	.table7 td{
+		font-size: 16px;
+		padding: 3px !important;
+	}
+	.table8 td{
+		font-size: 16px;
+		padding: 3px !important;
+	}
+	.ratevalue8 {
+		font-size: 15px !important;
+	}
+	
+	
+}
+@media only screen and (max-width: 400px) { 
+	
+	.headertable1 th {
+		font-size: 10px;
+		padding: 3px !important;
+	}
+	.table-responsivetop1{
+		margin-left: -3%;
+		width: 357px;
+	}
+	.table1 td{
+		font-size: 11px;
+		/*padding: 3px !important;*/
+		padding: 7px 0 7px 5px !important;
+	}
+	.table2 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table3 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.ratevalue2 {
+		font-size: 18px !important;
+	}
+	.headertable2 th {
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table-responsivetop2{
+		margin-left: -2%;
+		margin-top: 3px;
+		width: 353px;
+	}
+	.ratevalue10 {
+		font-size: 8px !important;
+	}
+	.table4 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table5 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table6 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.ratevalue5 {
+		font-size: 16px !important;
+	}
+	.headertable3 th {
+		font-size: 12px;
+		padding: 3px !important;
+	}
+	.table-responsivetop3{
+		margin-left: -3%;
+		margin-top: -3px;
+		width: 357px;
+	}
+	.table7 td{
+		font-size: 16px;
+		padding: 3px !important;
+	}
+	.table8 td{
+		font-size: 16px;
+		padding: 3px !important;
+	}
+	.ratevalue8 {
+		font-size: 15px !important;
+	}
+	
+}
+@media only screen and (max-width: 360px) { 
+	
+	.headertable1 th {
+		font-size: 10px;
+		padding: 6px 0 !important;
+	}
+	.table-responsivetop1{
+		/* margin-left: -4%; */
+		width: 357px;
+	}
+	.table1 td{
+		font-size: 13px;
+		/*padding: 3px !important;*/
+		padding: 7px 0 7px 5px !important;
+	}
+	.table2 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table3 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.ratevalue2 {
+		font-size: 18px !important;
+	}
+	.headertable2 th {
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table-responsivetop2{
+		/* margin-left: -4%; */
+		margin-top: 3px;
+		width: 357px;
+	}
+	.ratevalue10 {
+		font-size: 8px !important;
+	}
+	.table4 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table5 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.table6 td{
+		font-size: 11px;
+		padding: 3px !important;
+	}
+	.ratevalue5 {
+		font-size: 16px !important;
+	}
+	.headertable3 th {
+		font-size: 12px;
+		padding: 3px !important;
+	}
+	.table-responsivetop3{
+		/* margin-left: -4%; */
+		margin-top: -3px;
+		width: 357px;
+	}
+	.table7 td{
+		font-size: 16px;
+		padding: 3px !important;
+	}
+	.table8 td{
+		font-size: 16px;
+		padding: 3px !important;
+	}
+	.ratevalue8 {
+		font-size: 15px !important;
+	}
+	
+}
+@media only screen and (max-width: 320px) { 
+	
+	.paddingTopBottom15 {
+		padding-top: 40px;
+		padding-bottom: 15px;
+	}
+	.headertable1 th {
+		font-size: 10px;
+		padding: 5px !important;
+	}
+	.table-responsivetop1{
+		margin-left: -5%;
+		width: 320px;
+	}
+	.table1 td{
+		font-size: 10px;
+		padding: 1px !important;
+	}
+	.table2 td{
+		font-size: 10px;
+		padding: 1px !important;
+	}
+	.table3 td{
+		font-size: 10px;
+		padding: 1px !important;
+	}
+	.ratevalue2 {
+		font-size: 25px !important;
+	}
+	.headertable2 th {
+		font-size: 10px;
+	}
+	.table-responsivetop2{
+		margin-left: -5%;
+		margin-top: 3px;
+		width: 314px;
+	}
+	.table4 td{
+		font-size: 10px;
+		padding: 1px !important;
+	}
+	.table5 td{
+		font-size: 10px;
+		padding: 1px !important;
+	}
+	.table6 td{
+		font-size: 10px;
+		padding: 1px !important;
+	}
+	.ratevalue5 {
+		font-size: 17px !important;
+	}
+	.headertable3 th {
+		font-size: 11px;
+	}
+	.table-responsivetop3{
+		margin-left: -5%;
+		margin-top: -3px;
+		width: 314px;
+	}
+	.table7 td{
+		font-size: 13px;
+		padding: 1px !important;
+	}
+	.table8 td{
+		font-size: 13px;
+		padding: 1px !important;
+	}
+	.ratevalue8 {
+		font-size: 13px !important;
+	}
+	
+}

@@ -1,0 +1,1556 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+    <title>V S GOLD</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet" type="text/css" />
+    <!-- Swiper Tab Css -->
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Css Monank -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom2.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/alert/alert.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom_Arihant_chart.css" rel="stylesheet" type="text/css" /> 
+    <style>  
+        .col-xs-3
+        {
+            width: 19%;
+            text-align: center;
+        }
+        footer .fa
+        {
+            font-size: 22px !important;
+        }
+    </style>
+    <style>
+        .color-white
+        {
+            color: White !important;
+        }
+        
+        .btn-info
+        {
+            background-color: #383f48;
+            border-color: #34373a;
+        } 
+        
+    </style>
+    <style>
+        .gvDataChartt{
+            border: 1px solid #b69a4e;
+            box-shadow: 0 2px 1px 0px #b69a4e;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0 0 7px 7px;
+            background: #000;
+            color: #FFF;
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+    </style>
+
+</head>
+<body style="background: #FFF;">
+  
+ <header>
+      <div class="container">
+           
+        <nav class="navbar navbar-expand-lg nav-bg-white"> <!--id="navigation"-->
+
+            <div class="col-12 scroll-css text-center">
+                <div id="EnjoyHint3" data-intro="Menu" data-position="top"  style="display: inline-block;float: left;margin-top: 9px;">
+                    <button class="second-nav-toggler" type="button" style="background: transparent;border: 0;margin-right: 0px;">
+                        <img src="img/rb/menu.png" style="width: 25px;" />
+                    </button>
+                </div>
+
+                <div style="padding-bottom: 5px;margin-right: 30px;">
+                    <img src="img/logo.png" style="width:55%;" />
+                    <!--<a class="navbar-brand" href="index.html" style="font-weight: 800;font-size: 32px;color:#612241;">dP Gold</a>-->
+                </div>
+
+            </div>
+
+            <!--<div class="col-10 scroll-css text-center">
+                <!--<img src="img/logo.png" style="height: 50px;display: inline-block;margin-right: 5px;" />
+                <img src="img/logo1.png" style="height: 32px;display: inline-block;" />--
+             </div>-->
+
+        </nav>
+        
+      <!-- mobile manu  -->
+         <div id="mobile-nav" class="sidenav" data-prevent-default="true" data-mouse-events="true" >
+            <div class="mobile-nav-box">                
+                
+                <div class="col-xs-12 menu" style="display: inline-block;">
+                    <div class="mobile-logo">
+					    <a class="manu-close color-black">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                        <!--<img src="img/menu/menu_back.png" />-->
+                        </a>
+				    </div>
+                    
+                    <div class="mobile-logo float-left">
+					    <img class="header_Logo" src="img/logo.png" style="width: 130px;" />
+				    </div>
+                </div>
+                
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="index.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_liverates.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Live Rates</span>
+                  </a>
+                </div>
+
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Trades.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__trades.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Trades</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Trades_History.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__tradehistory.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Order History</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Orders.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_faq.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Pending Orders</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Bank_details.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_bankdetails.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Bank Details</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="BookingDesk.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_contact.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Booking Desk</span>
+                  </a>
+                </div>
+
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Message.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_message.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Messages</span>
+                  </a>
+                </div>
+
+
+
+                 <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="News.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_message.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">News</span>
+                  </a>
+                </div>
+
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="GoldTrends.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_goldtrend.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Gold Trends</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="EconomicCalendar.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu___calendar.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Economic Calendar</span>
+                  </a>
+                </div>-->
+
+
+                <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="HistoricalData.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_historicaldata.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Historical Data</span>
+                  </a>
+                </div>-->
+
+
+
+
+
+               <!-- <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="AboutUs.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__profile.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">About Us</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Alert.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_alert.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Rate Alert</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Chart.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_chart.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Live Chart</span>
+                  </a>
+                </div>-->
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Margin.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_margin.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Margin</span>
+                  </a>
+                </div>
+
+                <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="kyc.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__tradehistory.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">KYC</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryDocket.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_deliverydocket.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Docket</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryStatus.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_delivarystatus.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Status</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryCharges.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_deliverycharges.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Charges</span>
+                  </a>
+                </div>-->
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Login.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_llogin.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Login</span>
+                  </a>
+                </div>
+
+
+                <!--<div class="col-xs-3 menu" style="display: inline-block;">
+                  <a href="Products.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/riz/menu_product.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Products</span>
+                  </a>
+                </div>-->
+
+
+
+
+
+        </div>
+    </div>
+    <!-- Navigation Part End -->
+
+
+   
+      </div>
+
+    </header>
+
+    <div style="padding: 20px 0;">
+        <span style="color: #612241;text-transform: uppercase;display: block;padding: 0 25px;font-weight: 600;font-size: 14px;">
+            CHART
+        </span>
+    </div>
+
+
+    <!-- Begin page content -->
+    <main role="main" class="container" style=""> <!--background:white;color:black;-->
+    
+
+
+      <div class="swiper-container s1 div_spot">
+
+
+
+    
+
+
+     <div class="">
+        <div class="row">
+            <div class="col-lg-12 col-md-12" style="color:#FFF">                 
+                  <select id="mySelect" class="custom-select" style="border: 1px solid #b69a4e;
+    box-shadow: 0 2px 1px 0px #b69a4e;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0 0 7px 7px;
+    color: #000;"></select>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12" style="color:#FFF;font-size:10px;">                 
+                  
+
+                  <div id="gvDataSpot"></div>
+
+                    <br/>							
+
+                    <div id="gvData_Chart"></div>
+
+                    <br/>
+
+                    <div id="gvDataHighLow"></div>
+
+                    <br/>
+                    <br/>
+
+                    <div>
+                    <table>
+                    <tr>
+                    <td>
+                      <select id="timePeriod" name="timePeriod">
+                        <option value="15" data-display="15 mins">15 mins</option>
+                        <option value="30">30 mins</option>
+                        <option value="60">1 hour</option>
+                        <option value="720">1 day</option>
+                      </select>
+
+                    </td>
+                    <td>
+                    &nbsp
+                    </td>
+                    <td>
+                      <select id="chartType" name="chartType">
+                        <option value="candlestick" data-display="Candlesticks">Candlesticks</option>
+                        <option value="close">Line</option>
+                        <option value="ohlc">OHLC</option>    
+                      </select>
+                    </td>
+
+                    </tr>
+                    </table>
+  
+
+                    </div>
+
+                   
+
+
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+        <!--<br /><br /><br /><br />-->
+        </div>
+        
+
+    </div>
+
+    <style>
+        table.Sell_Alert tr td
+        {
+            padding: 5px 3px;
+        }
+    </style>
+
+
+      
+    </div>
+    <!--</div>-->
+
+   
+
+    </main>
+      <footer class="footer">
+
+    <div class="col-xs-3" style="display: inline-block;">
+            <a href="index.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <i class="fa fa-bar-chart" style="color: #FFF;"></i>
+                </button>
+                <span class="d-block font_footer" style="color:#FFF;">Live Rates</span>
+            </a>
+        </div>
+
+        <div class="col-xs-3" style="display: inline-block;">
+            <a href="index_Forward.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <!--id="go"-->
+                    <i class="fa fa-line-chart" style="color: #FFF;"></i> <!--color-white-->
+                </button>
+                <span class="d-block font_footer" style="color:#FFF">Forward</span>
+            </a>
+        </div>
+
+        <!--<div class="col-xs-3" style="display: inline-block;">
+              <a href="Bank_details.html" data-ajax='false'><button type="button" style="background: transparent;border: 0;">
+                <i class="fa fa-university" style="color: #FFF;"></i>
+           </button>
+           <span class="d-block font_footer" style="color:#FFF">Bank Details</span></a>
+        </div>-->
+
+        <div class="col-xs-3" style="display: inline-block;">
+            <a href="Message.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <!--id="go"-->
+                    <i class="fa fa-commenting" style="color: #FFF;"></i> <!--color-white-->
+                </button>
+                <span class="d-block font_footer" style="color:#FFF">Messages</span>
+            </a>
+        </div>
+       
+
+        
+        <div class="col-xs-12 col-md-12" style="display: block;background: #FFF;padding: 5px 15px 0px;height: 22px;">
+            <span class="text-muted" style="display: inline-block;float: left;font-size: 11px;">
+                <p class="nomargin" style="margin-bottom: 0rem;">© dP Gold</p>
+            </span>
+
+            <span class="text-muted" style="display: inline-block;float: right;font-size: 11px;">
+                <!--<p class="nomargin" style="margin-bottom: 0rem;">Powered by : Chirayu Software ®</p>-->
+            </span>
+        </div>
+
+</footer>
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="js/popper.min.js" type="text/javascript"></script>-->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!--<script src="js/swiper.min.js" type="text/javascript"></script>-->
+	<script src="js/spin.min.js" type="text/javascript"></script>
+    <script src="js/Spinner.Chirayu.js" type="text/javascript"></script>
+	
+    <script src="js/custom.js" type="text/javascript"></script>
+    <!--<script src="js/spin.min.js" type="text/javascript"></script>
+    <script src="js/Spinner.Chirayu.js" type="text/javascript"></script>-->
+    <script src="js/AJAX-disable.Chirayu.js" type="text/javascript"></script>
+    <script src="js/CloseApp.Chirayu.js" type="text/javascript"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/Alert.Chirayu.js" type="text/javascript"></script>
+
+    <script src="js/alert/liverates_chart.js" type="text/javascript"></script>
+
+    <script src="js/chart/FCM.Chirayu.js" type="text/javascript"></script>
+    <script src="js/chart/Admob-Pro.Chirayu.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/online_offline.js" type="text/javascript"></script>
+     <div id="connectiondiv" class="connectiondiv" style=""> 
+            <label align="center" id="connectionmsg" class="connectionmsg">Please check your internet connection</label>
+            <!--<button style="float:right">Reload</button>-->
+            <a id="connectionbtn" onclick="javascript:connectionbtn()" class="retry_connection_btn">Retry</a>
+            </div>
+    <script type="text/javascript">
+        app.initialize();
+			
+    </script>
+  
+  <script type="text/javascript">
+      document.addEventListener("deviceready", onDeviceReady, false);
+
+      // Cordova is loaded and it is now safe to call Cordova methods
+      //
+      function onDeviceReady() {
+          //alert1('onDeviceReady');
+          // Register the event listener
+          document.addEventListener("backbutton", onBackKeyDown, false);
+          document.addEventListener("pause", onPause, false);
+
+          try {
+
+              window.ga.trackView('Chart');
+          }
+          catch (e) {
+              //alert1("Error: " + e);
+
+          }
+      }
+
+      function onPause() {
+          //e.preventDefault();
+          //navigator.app.exitApp();
+
+      }
+
+      // Handle the back button
+      //
+      function onBackKeyDown() {
+
+          window.location.href = "index.html";
+
+          //                var r = confirm("Do you want to Exit?");
+          //                if (r == true) {
+          //                    //e.preventDefault();
+          //                    navigator.app.exitApp();
+
+          //                } else {
+          //                    //do nothing
+          //                }
+          //alert1('backbutton pressed');
+
+      }
+      $(document).ready(function () {
+
+          try {
+
+
+
+
+          }
+          catch (err) {
+
+          }
+
+
+      });
+        
+        </script>
+
+      <script>
+          var Main_ID = 0;
+          var Main_Name;
+
+          $("#mySelect").change(function () {
+
+
+              Main_ID = $(this).children(":selected").attr("value");
+              Main_Name = $("#mySelect option:selected").text();
+
+              localStorage.scripcodeChart = Main_ID;
+              console.log(localStorage.scripcodeChart);
+              //scriptcodeFill();
+              window.location.href = "Chart.html";
+
+          });
+
+
+        
+    </script>
+    
+  
+    <!--Chart-->
+    <style>
+
+@media (orientation: landscape) {
+  .footerLandscape {
+    display: ;
+  }
+}
+
+</style>
+    <script>
+
+
+
+        $(document).ready(function () {
+
+            try {
+
+                startSpinner();
+                $("#ScripCode").html(localStorage.scripcodeChart);
+                $('select').niceSelect();
+
+
+            }
+            catch (err) {
+                //alert(err);
+            }
+
+
+        });
+
+
+
+        //    function scriptcodeFill() {
+
+        //        try {
+
+        //            //startSpinner();
+        //            $("#ScripCode").html(localStorage.scripcode);
+        //            $('select').niceSelect();
+
+        //        }
+        //        catch (err) {
+        //            //alert(err);
+        //        }
+
+
+        //    }
+
+
+
+
+    </script>
+    <script>
+        function fnStartClock_Chart() {
+
+            try {
+
+                CallWebServiceFromJquery_Chart(localStorage.scripcodeChart);
+                oInterval = setInterval("CallWebServiceFromJquery_Chart('" + localStorage.scripcodeChart + "')", 500);
+            }
+            catch (e) {
+                //alert("fnStartClock" + e);
+            }
+        }
+
+        $(document).ready(function () {
+
+            try {
+
+                fnStartClock_Chart();
+                fnStartClockHighLow();
+            }
+            catch (err) {
+
+            }
+
+
+        });
+
+        function removeAllRowsFromTable() {
+
+            $("#gvData_Chart").empty();
+
+        }
+
+        function CallWebServiceFromJquery_Chart(scripCode) {
+            try {
+
+
+                //console.log(localStorage.scripcode);
+
+                //alert(localStorage.ipAddressBCast + ":" + localStorage.step3StreamingPort + "/VOTSBroadcastStreaming/Services/xml/GetLiveRateOfScrip/" + scripCode);
+                $.ajax({
+                    type: "GET",
+                    //url: "http://dpbullion.noip.us:8855/VOTSBroadcast/Services/xml/GetLiveRateMultiple/" + scripCode,
+                    //                    url: "http://mobiletradingbroadcast.capsgold.in:4878/VOTSBroadcast/Services/xml/GetLiveRateMultiple/" + scripCode,
+                    url: localStorage.ipAddressBCast + ":" + localStorage.step3StreamingPort + "/VOTSBroadcastStreaming/Services/xml/GetLiveRateOfScrip/" + scripCode,
+                    dataType: "text",
+                    crossDomain: true,
+                    processData: false,
+                    success: OnSuccess_Chart,
+                    error: OnError_Chart,
+                    cache: false
+                });
+            }
+            catch (e) {
+                //alert("CallWebServiceFromJquery " + e);
+            }
+
+
+        }
+        var maxRows = 0;
+        var oldData_Chart;
+
+        var deletedScrips = new Array();
+
+        var counterRefresh = 0;
+
+        var liveClose = 0;
+        var oldLiveClose = 0;
+
+         function OnSuccess_Chart(data, status) {
+            //alert(data);
+            try {
+
+                stopSpinner();
+
+				var bidRate = 0;
+				var askRate = 0;
+				 if (typeof data != 'undefined') {
+
+                       var ret = data.split("\t");
+
+                       if (typeof ret[1] != 'undefined') {
+
+
+                           bidRate = ret[2].trim();
+                           askRate = ret[3].trim();
+                           //alert1($("#marketBidPrice").val());
+
+                           //$("#marketBidPrice").html(ret[3]);
+
+
+                           //$("#marketAskPrice").html(ret[4]);
+							removeAllRowsFromTable();
+							
+							var zebra_Chart = document.getElementById("gvData_Chart");
+							var trow;
+
+							var trowString = "";
+							
+							liveClose = askRate;
+                            
+                            //alert(liveClose);
+                            //alert(oldLiveClose);
+                            try {
+                                redraw(liveClose);
+
+                            }
+                            catch (e) {
+                                //alert(e);
+                            }
+                            if (liveClose > oldLiveClose) {
+                                trowString = trowString + "<table width=\"100%\" class=\"gvDataChartt\"><tr><td align=\"center\" ><table  width=\"100%\" style=\"background-color: #00D600;\" bgcolor=\"#00D600\" ><tr ><td style=\"color:white;text-align:center;font-size: 100%;\">" + ret[2] + "</td></tr><tr><td style=\"color:white;text-align: center;font-size: 130%;\">" + liveClose + "</td></tr></table>"
+                            }
+                            else if (liveClose < oldLiveClose) {
+                                trowString = trowString + "<table width=\"100%\" class=\"gvDataChartt\"><tr><td align=\"center\" ><table  width=\"100%\" style=\"background-color: red;\" bgcolor=\"red\" ><tr ><td style=\"color:white;text-align:center;font-size: 100%;\">" + ret[2] + "</td></tr><tr><td style=\"color:white;text-align: center;font-size: 130%;\">" + liveClose + "</td></tr></table>"
+                            }
+                            else {
+                                trowString = trowString + "<table width=\"100%\" class=\"gvDataChartt\"><tr><td align=\"center\" ><table  width=\"100%\" style=\"background-color: #612241;\" bgcolor=\"#612241\"><tr ><td style=\"color:white;text-align:center;font-size: 100%;\">" + ret[2] + "</td></tr><tr><td style=\"color:white;text-align: center;font-size: 130%;\">" + liveClose + "</td></tr></table>"
+                            }
+							
+							//alert(trowString);
+
+							//trowString = trowString + "<br/><br/><br/>";
+							trow = $(trowString);
+							trow.prependTo(zebra_Chart);
+							
+							oldLiveClose = liveClose;
+                       }
+
+                   }
+				   
+				   
+				   
+               
+
+            }
+            catch (e) {
+                //alert("OnSuccess" + e);
+            }
+
+
+        }
+
+
+
+
+        function OnError_Chart(request, status, error) {
+            //alert("Webservice Error: " + request.statusText);
+        }
+
+
+
+
+        function fnStartClockHighLow() {
+
+            try {
+                CallWebServiceFromJqueryHighLow(localStorage.scripcodeChart);
+                oInterval = setInterval("CallWebServiceFromJqueryHighLow('" + localStorage.scripcodeChart + "')", 500);
+            }
+            catch (e) {
+                //alert("fnStartClock" + e);
+            }
+        }
+
+
+
+        function removeAllRowsFromTableHighLow() {
+
+            $("#gvDataHighLow").empty();
+
+        }
+
+        function CallWebServiceFromJqueryHighLow(scripCode) {
+            try {
+
+                //alert(scripCode);
+
+                //alert(localStorage.chartIpAddress + ":" + localStorage.chartPort + "/VOTSBroadcast/Services/xml/GetHighAndLow/" + scripCode);
+
+                $.ajax({
+                    type: "GET",
+                    //url: "http://dpbullion.noip.us:8844/VOTSBroadcast/Services/xml/GetHighAndLow/" + scripCode,
+                    //                    url: "http://mobiletradingbroadcast.capsgold.in:8888/VOTSBroadcast/Services/xml/GetHighAndLow/" + scripCode,
+                    url: localStorage.chartIpAddress + ":" + localStorage.chartPort + "/VOTSBroadcast/Services/xml/GetHighAndLow/" + scripCode,
+                    dataType: "text",
+                    crossDomain: true,
+                    processData: false,
+                    success: OnSuccessHighLow,
+                    error: OnErrorHighLow,
+                    cache: false
+                });
+            }
+            catch (e) {
+                //alert("CallWebServiceFromJquery " + e);
+            }
+
+
+        }
+
+        function OnSuccessHighLow(data, status) {
+            //alert(data);
+            try {
+
+                var messages = data.split(",");
+
+                if (typeof messages != 'undefined') {
+
+                    var High = messages[0];
+                    var HighTime = messages[1];
+                    var Low = messages[2];
+                    var LowTime = messages[3];
+                    var trowString = "";
+                    var trow;
+
+                    removeAllRowsFromTableHighLow();
+
+                    var zebra_gvDataHighLow = document.getElementById("gvDataHighLow");
+                    trowString = trowString + "<table width=\"100%\" style=\"font-size: 14px;font-weight: 700;\" cellpadding=\"1\" class=\"hl_chartt\"><tr><td align=\"center\" style=\"\" ><table  width=\"100%\" style=\"background: #612241;border-radius: 5px;\"><tr ><td style=\"color:#FFF;text-align:center;font-size: 100%;width: 100px;\">HIGH</td><td style=\"color:#18538b;text-align: center;font-size: 130%;color:white;\">" + High + "<div style=\"font-size:60%;display: inline-block;margin-left: 5%;\">" + HighTime + "</div></td></tr></table></td></tr><tr><td align=\"center\" style=\"\" ><table  width=\"100%\" style=\"background: #612241;border-radius: 5px;\">			<tr >				<td style=\"color:#FFF;text-align:center;font-size: 100%;width: 100px;\">Low</td>							<td style=\"color:white;text-align: center;font-size: 130%;color:white;\">" + Low + "<div style=\"font-size:60%;display: inline-block;margin-left: 5%;\">" + LowTime + "</div></td>			</tr>	    </table>	</td>	</tr></table>"
+
+                    trow = $(trowString);
+                    trow.prependTo(zebra_gvDataHighLow);
+
+                }
+
+            }
+            catch (e) {
+                //alert("OnSuccess" + e);
+            }
+
+
+        }
+
+
+
+        function OnErrorHighLow(request, status, error) {
+            //alert("Webservice Error: " + request.statusText);
+        }
+
+    </script>
+    <style>
+        body
+        {
+            
+            color: Black;
+            fill: #000;
+        }
+        
+        .axis path, .axis line
+        {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+            color: #000;
+        }
+        
+        .tick line
+        {
+            opacity: 0.2;
+        }
+        path.line
+        {
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 1;
+        }
+        
+        path.ohlc
+        {
+            stroke: #ffffff;
+            stroke-width: 1;
+        }
+        
+        path.ohlc.up
+        {
+            stroke: #00AA00;
+        }
+        
+        path.ohlc.down
+        {
+            stroke: #FF0000;
+        }
+        
+        path.candle
+        {
+            stroke: #ffffff;
+        }
+        
+        path.candle.body
+        {
+            stroke-width: 0;
+        }
+        
+        path.candle.up
+        {
+            fill: #00AA00;
+            stroke: #00AA00;
+        }
+        
+        path.candle.down
+        {
+            fill: #FF0000;
+            stroke: #FF0000;
+        }
+        
+        .y.annotation.right path
+        {
+            fill: #FF0000;
+        }
+        
+        rect.pane
+        {
+            cursor: move;
+            fill: none;
+            pointer-events: all;
+        }
+    </style>
+    <style>
+        main.container
+        {
+            padding: 10px;
+        }
+        select
+        {
+            /*display: none;*/
+        }
+        svg
+        {
+            /*padding: 10px;*/
+        }
+        svg
+        {
+            margin-bottom: 80%;
+            /*padding: 10px;*/
+        }
+        
+        
+        
+    </style>
+    
+    <script src="js/chart/d3.v3.min.js" type="text/javascript"></script>
+    <script src="js/chart/techan.min.js" type="text/javascript"></script>
+    <script>
+
+        var margin = { top: $(window).height() * 0.01, right: $(window).width() * 0.18, bottom: 50, left: 1 },
+            width = $(window).width() - margin.left - margin.right,
+            height = $(window).height() * 0.3;
+
+        var parseDate = d3.time.format("%d-%m-%y %H:%M:%S").parse;
+
+        var x = techan.scale.financetime()
+            .range([0, width]);
+
+        var y = d3.scale.linear()
+            .range([height, 0]);
+
+        //bar chart
+        var volumeBarChart = techan.plot.volume()
+            .accessor(techan.accessor.ohlc())   // For volume bar highlighting
+            .xScale(x)
+            .yScale(y);
+
+        //zoom
+        //var zoom = d3.behavior.zoom()
+        //        .on("zoom", draw);
+        var close = techan.plot.close()
+            .xScale(x)
+            .yScale(y);
+
+        var candlestick = techan.plot.candlestick()
+            .xScale(x)
+            .yScale(y);
+
+        var ohlc = techan.plot.ohlc()
+            .xScale(x)
+            .yScale(y);
+
+        var xAxis = d3.svg.axis()
+            .scale(x)
+			.ticks(5)
+			.innerTickSize(-height)
+			.outerTickSize(10)
+			.tickPadding(10)
+			.tickFormat(d3.time.format("%I:%M"))// chirayu
+            .orient("bottom");
+
+
+
+
+        //var yAxis = d3.svg.axis()
+        //       .scale(y)
+        //       .orient("left");
+
+
+
+        var yRightAxis = d3.svg.axis()
+            .scale(y)
+			.innerTickSize(-width)
+			.outerTickSize(10)
+			.tickPadding(10)
+            .orient("right");
+
+        var ohlcRightAnnotation = techan.plot.axisannotation()
+            .axis(yRightAxis)
+            .accessor(candlestick.accessor())
+            .translate([width, 0]); // Translation can be optionally set here, or over the group
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", "100%")
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var xAxisG;
+        //zoom
+        //svg.append("clipPath")
+        //.attr("id", "clip")
+        //    .append("rect")
+        //        .attr("x", 0)
+        //        .attr("y", y(1))
+        //        .attr("width", width)
+        //        .attr("height", y(0) - y(1));
+
+        //zoom
+        //svg.append("rect")
+        //        .attr("class", "pane")
+        //        .attr("width", width)
+        //        .attr("height", height)
+        //        .call(zoom);
+
+        var dataAll;
+
+        //alert(localStorage.chartIpAddress + ":" + localStorage.chartPort + "/VOTSBroadcast/Services/xml/GetChartDataInCSV/" + localStorage.scripcodeChart);
+        //alert("http://mobiletradingbroadcast.capsgold.in:8888/VOTSBroadcast/Services/xml/GetChartDataInCSV/" + localStorage.scripcode);
+
+        //        d3.csv("http://mobiletradingbroadcast.capsgold.in:8888/VOTSBroadcast/Services/xml/GetChartDataInCSV/" + localStorage.scripcode, function (error, data) {
+        d3.csv(localStorage.chartIpAddress + ":" + localStorage.chartPort + "/VOTSBroadcast/Services/xml/GetChartDataInCSV/" + localStorage.scripcodeChart, function (error, data) {
+            try {
+                //alert("Start");
+                var accessor = candlestick.accessor(),
+            timestart = Date.now();
+                //alert("Total rows in csv file : " + data.length);
+                //alert(error.responseText);
+
+                data = data.slice(0, 720).map(function (d) {
+
+                    //alert(d.Date);
+
+                    return {
+
+                        date: parseDate(d.Date),
+                        open: +d.Open,
+                        high: +d.High,
+                        low: +d.Low,
+                        close: +d.Close,
+                        volume: +d.Volume
+                    };
+
+                }).sort(function (a, b) { return d3.ascending(accessor.d(a), accessor.d(b)); });
+                dataAll = data;
+                //alert(1);
+                x.domain(data.map(accessor.d));
+                //alert(2);
+                y.domain(techan.scale.plot.ohlc(data, accessor).domain());
+
+                if (chartTypeID.localeCompare("candlestick") == 0) {
+                    //alert(svg.select("g.candlestick"));
+                    if (svg.select("g.candlestick")[0][0] == null) {
+                        svg.append("g")
+                .datum(dataAll)
+                .attr("class", "candlestick")
+                .call(candlestick);
+
+                    }
+                    else {
+                        svg.select('g.candlestick').call(candlestick);
+                    }
+                    svg.select("g.close").remove();
+
+                }
+                else {
+                    if (svg.select("g.close")[0][0] == null) {
+                        svg.append("g")
+                .datum(dataAll)
+                .attr("class", "close")
+                .call(close);
+
+                    }
+                    else {
+                        svg.select('g.close').call(close);
+                    }
+
+                    svg.select("g.candlestick").remove();
+
+                }
+
+                //alert(3);
+                //svg.append("g")
+                //        .datum(data)
+                //       .attr("class", "candlestick")
+                //       .call(candlestick);
+
+                //svg.append("g")
+                //       .datum(data)
+                //        .attr("class", "close")
+                //        .call(close);
+                //alert(4);
+
+
+
+                svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+                //alert(5);
+                //svg.append("g")
+                //        .attr("class", "y axis")
+                //        .call(yAxis)
+                //       .append("text")
+                //       .attr("transform", "rotate(-90)")
+                //       .attr("y", 6)
+                //       .attr("dy", ".71em")
+                //       .style("text-anchor", "end")
+                //       .text("Price (Rs)");
+
+
+                svg.append("g")
+                .attr("class", "y axis")
+                .attr("transform", "translate(" + width + ",0)")
+                .call(yRightAxis);
+
+                //alert(data[data.length-1]);
+                var liveData;
+                //alert(liveClose);
+                if (liveClose == 0) {
+                    liveData = data[data.length - 1];
+                }
+                else {
+                    liveData = { date: "01-01-2001 01:01:01", open: +liveClose, high: +liveClose, low: +liveClose, close: +liveClose, volume: +liveClose };
+                }
+
+                svg.append("g")
+                .attr("class", "y annotation right")
+                .datum([liveData])
+                .call(ohlcRightAnnotation);
+
+                // Show only 150 points on the plot
+                if (dataAll.length >= 15) {
+                    x.zoomable().domain([dataAll.length - 15, dataAll.length]);
+                    // Update y scale min max, only on viewable zoomable.domain()
+                    //y.domain(techan.scale.plot.ohlc(dataAll.slice(dataAll.length-30, dataAll.length)).domain());
+                }
+                //zoom
+                // Associate the zoom with the scale after a domain has been applied
+                //zoom.x(x.zoomable().clamp(false)).y(y);
+
+                //alert(6);
+                console.log("Render time: " + (Date.now() - timestart));
+                stopSpinner();
+            }
+            catch (ex) {
+                //alert(ex);
+            }
+
+        });
+
+        function draw() {
+            //svg.select("g.candlestick").call(candlestick);
+            //// using refresh method is more efficient as it does not perform any data joins
+            //// Use this if underlying data is not changing
+            //       // svg.select("g.candlestick").call(candlestick.refresh);
+            //svg.select("g.x.axis").call(xAxis);
+            //svg.select("g.y.axis").call(yAxis)
+
+
+
+            //var accessor = candlestick.accessor();
+            //x.domain(dataAll.map(accessor.d));
+            //y.domain(techan.scale.plot.ohlc(dataAll, accessor).domain());
+
+            // Show only 150 points on the plot
+            //if (dataAll.length >= 30)
+            //{
+            //	x.zoomable().domain([dataAll.length-30, dataAll.length]);
+            // Update y scale min max, only on viewable zoomable.domain()
+            //	y.domain(techan.scale.plot.ohlc(dataAll.slice(dataAll.length-30, dataAll.length)).domain());
+            //}
+
+
+            //yVolume.domain(techan.scale.plot.volume(data.slice(data.length-130, data.length)).domain());
+
+            //svg.select("g.volume.axis").call(volumeAxis);
+
+            // Recalculate indicators and update the SAME array and redraw moving average
+            //refreshIndicator(svg.select("g.sma.ma-0"), sma0, sma0Calculator(data));
+            //refreshIndicator(svg.select("g.sma.ma-1"), sma1, sma1Calculator(data));
+            //svg.select("g.volume").call(volume);
+            //svg.select("g.crosshair.ohlc").call(crosshair);
+            // Set next timer expiry
+
+            svg.select('g.x.axis').call(xAxis);
+            svg.select('g.y.axis').call(yRightAxis);
+            svg.select("g.candlestick").call(candlestick);
+
+        }
+        var nosOfCandles = 15;
+        $("#timePeriod").change(changeZoom);
+        function changeZoom() {
+            nosOfCandles = $("#timePeriod").val();
+            redraw(liveClose);
+        }
+        var chartTypeID = "candlestick";
+        $("#chartType").change(changeChartType);
+        function changeChartType() {
+            chartTypeID = $("#chartType").val();
+            redraw(liveClose);
+        }
+
+
+        function redraw(liveClose) {
+
+            var liveData;
+            //alert(liveClose);
+            if (liveClose == 0) {
+                liveData = dataAll[dataAll.length - 1];
+            }
+            else {
+                liveData = { date: "01-01-2001 01:01:01", open: +liveClose, high: +liveClose, low: +liveClose, close: +liveClose, volume: +liveClose };
+            }
+
+            if (dataAll[dataAll.length - 1].high < +liveClose) {
+                dataAll[dataAll.length - 1].high = +liveClose;
+            }
+
+            if (dataAll[dataAll.length - 1].low > +liveClose) {
+                dataAll[dataAll.length - 1].low = +liveClose;
+            }
+
+            dataAll[dataAll.length - 1].close = +liveClose;
+
+            //dataAll.push(liveData);
+
+            var accessor = candlestick.accessor();
+            x.domain(dataAll.map(accessor.d));
+            y.domain(techan.scale.plot.ohlc(dataAll, accessor).domain());
+
+            // Show only 150 points on the plot
+            if (dataAll.length >= nosOfCandles) {
+                x.zoomable().domain([dataAll.length - nosOfCandles, dataAll.length]);
+                // Update y scale min max, only on viewable zoomable.domain()
+                y.domain(techan.scale.plot.ohlc(dataAll.slice(dataAll.length - nosOfCandles, dataAll.length)).domain());
+            }
+
+
+            //yVolume.domain(techan.scale.plot.volume(data.slice(data.length-130, data.length)).domain());
+            svg.select('g.x.axis').call(xAxis);
+            svg.select('g.y.axis').call(yRightAxis);
+            //svg.select("g.volume.axis").call(volumeAxis);
+            if (chartTypeID == "candlestick") {
+                if (svg.select("g.candlestick")[0][0] == null) {
+                    svg.append("g")
+                .datum(dataAll)
+                .attr("class", "candlestick")
+                .call(candlestick);
+
+                }
+                else {
+                    svg.select('g.candlestick').call(candlestick);
+                }
+                svg.select("g.close").remove();
+                svg.select("g.ohlc").remove();
+            }
+            else if (chartTypeID == "close") {
+                if (svg.select("g.close")[0][0] == null) {
+                    svg.append("g")
+                .datum(dataAll)
+                .attr("class", "close")
+                .call(close);
+
+                }
+                else {
+                    svg.select('g.close').call(close);
+                }
+
+                svg.select("g.candlestick").remove();
+                svg.select("g.ohlc").remove();
+            }
+            else {
+                if (svg.select("g.ohlc")[0][0] == null) {
+                    svg.append("g")
+                .datum(dataAll)
+                .attr("class", "ohlc")
+                .call(ohlc);
+
+                }
+                else {
+                    svg.select('g.ohlc').call(ohlc);
+                }
+
+                svg.select("g.candlestick").remove();
+                svg.select("g.close").remove();
+
+
+            }
+
+            // Recalculate indicators and update the SAME array and redraw moving average
+            //refreshIndicator(svg.select("g.sma.ma-0"), sma0, sma0Calculator(data));
+            //refreshIndicator(svg.select("g.sma.ma-1"), sma1, sma1Calculator(data));
+            //svg.select("g.volume").call(volume);
+            //svg.select("g.crosshair.ohlc").call(crosshair);
+            // Set next timer expiry
+
+            svg.select("g.y.annotation.right").remove();
+            svg.append("g")
+                .attr("class", "y annotation right")
+                .datum([liveData])
+                .call(ohlcRightAnnotation);
+
+            //svg.select("g.y.annotation.right").data([liveData]).enter().call(ohlcRightAnnotation);
+
+
+        }
+	
+    </script>
+
+
+
+
+
+
+    <script>
+        var myColor_Background = "#e2ba3e";
+        var Color_ForeColor = "#FFF";
+        var Color_ScriptColor = "#011d28";
+
+        var something = (function () {
+            var executed = false;
+            return function () {
+                if (!executed) {
+
+                    //document.body.style.backgroundColor = myColor_Background;
+                    $(".modal-content").css("background", myColor_Background);
+                    //$(".mobile-nav-box").css("background", "#CB8E2A");
+
+                    //Fore Color
+                    $(".color-white").css("color", Color_ForeColor);
+
+                    //Script Color
+                    $(".swiper-pagination1.swiper-pagination-clickable .swiper-pagination-bullet").css("background", Color_ScriptColor);
+                    $(".back_fore_color_td").css("background", Color_ScriptColor);
+
+
+
+                }
+            };
+        })();
+
+        something(); // "do something" happens
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+    </script>
+
+      <script>
+
+
+
+          $(document).ready(function () {
+
+
+
+              if (localStorage.username) {
+
+                  var pendingCode = "<a href=\"Orders.html\" data-ajax='false'>" +
+                   "<button type=\"button\" style=\"background: transparent;border: 0;\">" +
+                    "<i class=\"fa fa-pencil-square-o\" style=\"color: #FFF;\"></i>" +
+                      "</button>" +
+					"<span class=\"d-block font_footer\" style=\"color:#FFF\">Pending</span>" +
+                   "</a>";
+
+                  $("#divLoginPending").html(pendingCode);
+
+              }
+              else {
+
+                  var loginCode = "<a href=\"Login.html\" data-ajax='false'>" +
+                   "<button type=\"button\" style=\"background: transparent;border: 0;\">" +
+                    "<i class=\"fa fa-sign-in\" style=\"color: #FFF;\"></i>" +
+                      "</button>" +
+					"<span class=\"d-block font_footer\" style=\"color:#FFF\">Login</span>" +
+                   "</a>";
+
+                  $("#divLoginPending").html(loginCode);
+
+              }
+
+
+          });
+	
+	
+    </script>
+
+    <!--Model 2-->
+    <div class="modal fade" id="myModal_QuickCall" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content goldblock" style="border: 1px solid rgba(255, 247, 216, 0.63);">
+                <table width="100%" align="center" style="text-align: center;">
+                    <tr>
+                        <td>
+                            <!--style="padding-bottom: 3%;"-->
+                            <table id="Table11" class="color-white Trending_Table_Child2" width="100%">
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="color-gold" style="text-align: center; text-decoration: underline; padding: 7px 10px;
+                                            text-transform: uppercase;">
+                                            Dealing Desk</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <!--back_fore_color_td-->
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:02261837523">022 61837523</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:02261838989">022 61838989</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:+919820769155">+91 9820769155</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="Table1" class="color-white Trending_Table_Child2" width="100%">
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="color-gold" style="text-align: center; text-decoration: underline; padding: 7px 10px;
+                                            text-transform: uppercase;">
+                                            Accounts and Delivery</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-briefcase color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:022 61832780">022 61832780</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-briefcase color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:+91 7738515739">+91 7738515739</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="Table2" class="color-white Trending_Table_Child2" width="100%">
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="color-gold" style="text-align: center; text-decoration: underline; padding: 7px 10px;
+                                            text-transform: uppercase;">
+                                            Gold Coin</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-balance-scale color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:022 61838993">022 61838993</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-balance-scale color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:+91 9869209699">+91 9869209699</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="close" data-dismiss="modal" style="padding-top: 20px;
+                    padding-bottom: 20px; text-decoration: underline; background-color: rgb(1, 20, 27);">
+                    Close &times;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

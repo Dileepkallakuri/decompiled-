@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.lmx.dpbullions" version="10.0.4" xmlns="http://www.w3.org/ns/widgets"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="Monaca">
+        <param name="android-package" value="mobi.monaca.plugin.MonacaPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="FirebasePlugin">
+        <param name="android-package" value="org.apache.cordova.firebase.FirebasePlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="android-package" value="com.adobe.phonegap.push.PushPlugin" />
+    </feature>
+    <name>dP Gold</name>
+    <description> dP Gold is Online Bullion Live Rates Viewing mobile app for Gold and Silver. </description>
+    <author email="chirayu@chirayusoft.com" href="http://www.chirayusoft.com"> Chirayu Software Solutions </author>
+    <content src="index.html" />
+    <gap:plugin name="cordova-plugin-dialogs" source="npm" />
+    <gap:plugin name="cordova-plugin-device" source="npm" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <icon src="res/icon/android/playstore-icon.png" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+        <string>need camera access to take pictures</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+        <string>need to photo library access to get pictures from there</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+        <string>need location access to find things nearby</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryAddUsageDescription">
+        <string>need to photo library access to save pictures there</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSMicrophoneUsageDescription">
+        <string>need microphone access to record sounds</string>
+    </edit-config>
+    <access origin="*" />
+    <custom-preference name="android-manifest/application/@android:usesCleartextTraffic" value="true" />
+    <icon density="xxxhdpi" src="/res/android/icon/xxxhdpi.png" />
+    <icon density="xxhdpi" src="/res/android/icon/xxhdpi.png" />
+    <icon density="xhdpi" src="/res/android/icon/xhdpi.png" />
+    <icon density="hdpi" src="/res/android/icon/hdpi.png" />
+    <icon density="mdpi" src="/res/android/icon/mdpi.png" />
+    <icon density="ldpi" src="/res/android/icon/ldpi.png" />
+    <resource-file src="google-services.json" target="app/google-services.json" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+    <preference name="GradlePluginGoogleServicesVersion" value="4.3.15" />
+    <preference name="GradlePluginKotlinEnabled" value="true" />
+    <preference name="GradlePluginKotlinVersion" value="1.7.21" />
+    <preference name="permissions" value="none" />
+    <preference name="target-device" value="universal" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="WindowsStorePublisherName" value="My Name" />
+    <preference name="WindowsStoreIdentityName" value="a018f4b3-f0ba-ea9d-05e6-91745d4afc9c" />
+    <preference name="KeepRunning" value="false" />
+    <preference name="monaca:AndroidIsPackageNameSeparate" value="false" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="Orientation" value="default" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="monaca:PushProjectId" value="fqHRus1E34rcckY6" />
+    <preference name="monaca:ProjectId" value="65954db2e788852f0d29c9d7" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="android-targetSdkVersion" value="33" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#ff000000" />
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/android/screen/window_splashscreen_icon.png" />
+</widget>

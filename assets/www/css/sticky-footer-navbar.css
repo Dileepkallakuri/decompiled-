@@ -1,0 +1,72 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+     text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    line-height: 11px;
+    background: #612241;
+    font-size: 14px;
+  
+   
+}
+
+footer.footer .col-xs-3 {
+  padding: 5px 0 0px 0;
+}
+
+.col-xs-3.one img,.col-xs-3.two img,.col-xs-3.three img
+{
+    margin-left: 3px;
+}
+        
+.col-xs-3.four img
+{
+    margin-left: -2px;
+}
+        
+.col-xs-3.five img
+{
+    margin-left: 3px;
+}
+
+footer.footer button {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  /*padding: 60px 15px 0;*/
+  padding: 10px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+footer .fa
+{
+    /* color: #000 !important; */
+	color: #FFF !important;
+	font-size:22px;
+}

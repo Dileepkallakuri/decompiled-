@@ -1,0 +1,1560 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--<link href="css/table.css" rel="stylesheet" type="text/css" />-->
+    <title>Param Enterprise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5-monank.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="Scripts/jquery-1.11.3.min.js"></script>
+    <script src="Scripts/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="js/AJAX-disable.Chirayu.js" type="text/javascript"></script>
+    <script src="js/spin.min.js" type="text/javascript"></script>
+    <script src="js/Spinner.Chirayu.js" type="text/javascript"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet" type="text/css" />
+    <!-- Swiper Tab Css -->
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Css Monank -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom2.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+
+    <style>
+        .ui-input-text input, .ui-input-search input {
+            width:200px;
+        }
+        .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body style="background: #FFF;">
+    <div data-role="page">
+    <header>
+      <div class="container">
+           
+        <nav class="navbar navbar-expand-lg nav-bg-white"> <!--id="navigation"-->
+
+            <div class="col-12 scroll-css text-center">
+                <div id="EnjoyHint3" data-intro="Menu" data-position="top"  style="display: inline-block;float: left;margin-top: 9px;">
+                    <button class="second-nav-toggler" type="button" style="background: transparent;border: 0;margin-right: 0px;">
+                        <img src="img/rb/menu.png" style="width: 25px;" />
+                    </button>
+                </div>
+
+                <div style="padding-bottom: 5px;margin-right: 30px;">
+                    <img src="img/logo.png" style="width:55%;" />
+                    <!--<a class="navbar-brand" href="index.html" style="font-weight: 800;font-size: 32px;color:#612241;">dP Gold</a>-->
+                </div>
+
+            </div>
+
+            <!--<div class="col-10 scroll-css text-center">
+                <!--<img src="img/logo.png" style="height: 50px;display: inline-block;margin-right: 5px;" />
+                <img src="img/logo1.png" style="height: 32px;display: inline-block;" />--
+             </div>-->
+
+        </nav>
+        
+      <!-- mobile manu  -->
+         <div id="mobile-nav" class="sidenav" data-prevent-default="true" data-mouse-events="true" >
+            <div class="mobile-nav-box">                
+                
+                <div class="col-xs-12 menu" style="display: inline-block;">
+                    <div class="mobile-logo">
+					    <a class="manu-close color-black">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                        <!--<img src="img/menu/menu_back.png" />-->
+                        </a>
+				    </div>
+                    
+                    <div class="mobile-logo float-left">
+					    <img class="header_Logo" src="img/logo.png" style="width: 130px;" />
+				    </div>
+                </div>
+                
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="index.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_liverates.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Live Rates</span>
+                  </a>
+                </div>
+
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Trades.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__trades.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Trades</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Trades_History.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__tradehistory.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Order History</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Orders.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_faq.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Pending Orders</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Bank_details.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_bankdetails.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Bank Details</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="BookingDesk.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_contact.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Booking Desk</span>
+                  </a>
+                </div>
+
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Message.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_message.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Messages</span>
+                  </a>
+                </div>
+
+
+
+                 <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="News.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_message.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">News</span>
+                  </a>
+                </div>
+
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="GoldTrends.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_goldtrend.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Gold Trends</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="EconomicCalendar.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu___calendar.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Economic Calendar</span>
+                  </a>
+                </div>-->
+
+
+                <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="HistoricalData.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_historicaldata.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Historical Data</span>
+                  </a>
+                </div>-->
+
+
+
+
+
+               <!-- <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="AboutUs.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__profile.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">About Us</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Alert.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_alert.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Rate Alert</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Chart.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_chart.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Live Chart</span>
+                  </a>
+                </div>-->
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Margin.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_margin.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Margin</span>
+                  </a>
+                </div>
+
+                <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="kyc.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__tradehistory.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">KYC</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryDocket.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_deliverydocket.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Docket</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryStatus.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_delivarystatus.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Status</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryCharges.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_deliverycharges.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Charges</span>
+                  </a>
+                </div>-->
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Login.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_llogin.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Login</span>
+                  </a>
+                </div>
+
+
+                <!--<div class="col-xs-3 menu" style="display: inline-block;">
+                  <a href="Products.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/riz/menu_product.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Products</span>
+                  </a>
+                </div>-->
+
+
+
+
+
+        </div>
+    </div>
+    <!-- Navigation Part End -->
+
+
+   
+      </div>
+
+    </header>
+
+    <div style="padding: 20px 0;">
+        <span style="color: #612241;text-transform: uppercase;display: block;padding: 0 25px;font-weight: 600;font-size: 14px;">
+                NEW ORDER 
+        </span>
+        </div>
+        <style>
+            .New_button
+            {
+                font-size: 16px;
+                margin: .5em 0;
+                padding: .7em 1em;
+                display: block;
+                position: relative;
+                text-align: center;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+        </style>
+        <style>
+         
+            @media (min-width: 700px)
+            {
+            
+                .main-container
+                {
+                    padding: 30% 0px 0 !important;
+                }
+            
+            }
+        </style>
+        <main role="main" class="container main-container" style=""> <!--background:white;color:black;-->
+		
+            <div class="">
+            
+                <div id="ScripCode" style="color:Black;text-align:center;font-size:100%;font-weight:bold;"></div>
+                <br />
+
+<fieldset id="fieldsettt" data-role="controlgroup" data-type="horizontal" style="text-align:center;margin:auto;border:0px solid white;width:100%;">
+<input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked" onclick="showWindow('market');" >
+<label class="New_button" style="font-size:100%;" for="radio-choice-h-2a" onclick="showWindow('market');">Market</label>
+<input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off" onclick="showWindow('pending');">
+<label class="New_button" style="font-size:100%;" for="radio-choice-h-2b" onclick="showWindow('pending');">Pending</label>
+</fieldset>
+				<br/>
+				
+			<table  width="100%" style="margin-bottom:0 !important;padding: 0 !important;">
+				<tr align="center">
+					<!--<td style="color:Black;">
+						BID
+					</td>-->
+					<td style="color:Black;">
+						PRICE
+					</td>
+					<!--<td style="color:black;">
+						Price
+					</td>-->
+				</tr>
+				<tr align="center">
+					 <!--<td > 
+						 <label style="color:Black;font-size:200% !Important;font-weight:bold  !Important;" id="marketBidPrice">0</label> 
+					 </td> -->
+					<td >
+						<label style="color:Black;font-size:200% !Important;font-weight:bold  !Important;" id="marketAskPrice">0</label>
+					</td>
+					<!--<td >
+						<label style="color:#66FF00;font-size:150% !Important;font-weight:bold  !Important;" id="marketAskPrice">0</label>
+					</td>-->
+				</tr>				
+			</table>
+			
+			 <!--Start Quantity-->
+            <table id="qtyy_hide" width="100%">
+			<tr>
+			<td align="right" width="35%" style="color:Black;">
+			Quantity
+			<td>
+			<td align="left">
+			    <div id="mySelectDiv">
+                       
+                </div>
+			</td>
+			</tr>
+			</table>
+            
+            <!--End Quantity-->
+			
+			<div id="MarketOrderWindow">
+						
+			<div style="color:Black;" data-role="fieldcontain" id="MarketOrderWindowQuantity">
+			</div>
+				
+				
+				<style>
+					.ui-content {
+						
+						overflow-x: visible; 
+						
+					}
+					ul.list {
+						overflow-y: scroll !Important;
+						height: 250px;
+					}
+					
+					.ui-field-contain, .ui-mobile fieldset.ui-field-contain {
+ 
+						padding: 0px !Important;
+					}
+				</style>
+				
+				
+				
+				
+			
+			<div align="center">  
+			<!--<form align="center">
+			<fieldset data-role="controlgroup" data-type="horizontal">-->
+						 <!--<a href="#" data-role="button" class="New_button" style="background: red; color: white;font-size:100%;width: 25%;display: inline-block;" data-inline="true" id="marketSellButton">Sell</a> -->
+						<a href="#" data-role="button" class="New_button" style="background: blue; color: white;font-size:100%;width: 25%;display: inline-block;"  data-inline="true" id="marketBuyButton">Buy</a>
+
+
+                        <!--<span id="buy_sell_messagee" style="color:#FFF;display:block;font-size: 12px;margin-top:10px;">
+                        Please Contact Emmanuel Dasi at +91-9652222613, <br /> +91-8801772881,
+                        <a href="mailto:Emmanuel@stampedecap.com" style="color:#FFF;">Emmanuel@stampedecap.com</a>
+                    </span>-->
+
+			<!--</fieldset>
+			</form>		-->
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+		<div id="PendingOrderWindow" style="display:none;">
+			
+			<div style="color:Black;" align="center" class="ui-field-contain">
+				
+					<div style="color:Black;" data-role="fieldcontain" id="PendingOrderWindowQuantity">
+					
+						
+				
+					</div>
+				
+				<table >
+				<tr>
+				<td  width="20%" align="right" valign="center" style="color:#000;">
+				<label for="number-pattern">Price:</label>
+				</td>
+				<td width="80%" align="left">
+				<input type="number" name="number" pattern="[0-9]*" id="pendingPriceText" value="">
+				</td>
+				</tr>
+				</table>
+			
+			</div>
+			
+		
+			<div align="center">  
+			<!--<form align="center">
+			<fieldset data-role="controlgroup" data-type="horizontal">-->
+						 <!--<a href="#" class="New_button" data-role="button" style="background: red; color: white;font-size:100%;width: 25%;display: inline-block;" data-inline="true" id="pendingSellButton">Sell</a> -->
+						<a href="#" class="New_button" data-role="button" style="background: blue; color: white;font-size:100%;width: 25%;display: inline-block;"  data-inline="true" id="pendingBuyButton">Buy</a>
+			<!--</fieldset>
+			</form>-->
+			</div>
+		</div>
+
+            </div>
+    
+		<br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+	 <br /><br /><br /><br /><br /><br /><br /><br />
+       
+    </main>
+      
+
+
+        <footer class="footer">
+
+       <div class="col-xs-3" style="display: inline-block;">
+            <a href="index.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <i class="fa fa-bar-chart" style="color: #FFF !Important;"></i>
+                </button>
+                <span class="d-block font_footer" style="color:#FFF !Important;">Live Rates</span>
+            </a>
+        </div>
+
+        <div class="col-xs-3" style="display: inline-block;">
+            <a href="Trades.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <!--id="go"-->
+                    <i class="fa fa-book" style="color: #FFF;"></i> <!--color-white-->
+                </button>
+                <span class="d-block font_footer" style="color:#FFF">Trades</span>
+            </a>
+        </div>
+
+        <div class="col-xs-3" style="display: inline-block;">
+              <a href="Orders.html" data-ajax='false'><button type="button" style="background: transparent;border: 0;">
+                <i class="fa fa-pencil-square-o" style="color: #FFF;"></i>
+           </button>
+           <span class="d-block font_footer" style="color:#FFF">Pending Orders</span></a>
+        </div>
+
+        <div class="col-xs-3" style="display: inline-block;">
+            <a href="Message.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <!--id="go"-->
+                    <i class="fa fa-bell" style="color: #FFF;"></i> <!--color-white-->
+                </button>
+                <span class="d-block font_footer" style="color:#FFF">Messages</span>
+            </a>
+        </div>
+
+
+        <div class="col-xs-3" style="display: inline-block;">
+            <a href="DeliveryLifted.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <i class="fa fa-book" style="color: #FFF;"></i>
+                </button>
+                <span class="d-block font_footer" style="color:#FFF">Trade History</span>
+            </a>
+        </div>
+ 
+
+        
+        <div class="col-xs-12 col-md-12" style="display: block;background: #FFF;padding: 5px 15px 0px;height: 22px;">
+            <span class="text-muted" style="display: inline-block;float: left;font-size: 11px;">
+                <p class="nomargin" style="margin-bottom: 0rem;">© dP Gold</p>
+            </span>
+
+            <span class="text-muted" style="display: inline-block;float: right;font-size: 11px;">
+                <!--<p class="nomargin" style="margin-bottom: 0rem;">Powered by : Chirayu Software ®</p>-->
+            </span>
+        </div>
+            
+
+</footer>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <!--<script src="js/popper.min.js" type="text/javascript"></script>-->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!--<script src="js/swiper.min.js" type="text/javascript"></script>-->
+        <script src="js/custom.js" type="text/javascript"></script>
+        <script src="Scripts/iscroll.js" type="text/javascript"></script>
+        <script src="js/spin.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/Alert.Chirayu.js" type="text/javascript"></script>
+        <!--   <script src="jquery.confirm/jquery.confirm.js" type="text/javascript"></script>
+    <link href="jquery.confirm/jquery.confirm.css" rel="stylesheet" type="text/css" />-->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/online_offline.js" type="text/javascript"></script>
+        <div id="connectiondiv" class="connectiondiv" style="">
+            <label align="center" id="connectionmsg" class="connectionmsg">
+                Please check your internet connection</label>
+            <!--<button style="float:right">Reload</button>-->
+            <a id="connectionbtn" onclick="javascript:connectionbtn()" class="retry_connection_btn">
+                Retry</a>
+        </div>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/BuySellQuantity.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            app.initialize();
+			
+        </script>
+        <script>
+
+
+
+            $(document).ready(function () {
+
+
+
+                if (localStorage.username) {
+
+                    var pendingCode = "<a href=\"Orders.html\" data-ajax='false'>" +
+                   "<button type=\"button\" style=\"background: transparent;border: 0;\">" +
+                    "<i class=\"fa fa-pencil-square-o\" style=\"color: #FFF;\"></i>" +
+                      "</button>" +
+					"<span class=\"d-block font_footer\" style=\"color:#FFF\">Pending</span>" +
+                   "</a>";
+
+                    $("#divLoginPending").html(pendingCode);
+
+                }
+                else {
+
+                    var loginCode = "<a href=\"Login.html\" data-ajax='false'>" +
+                   "<button type=\"button\" style=\"background: transparent;border: 0;\">" +
+                    "<i class=\"fa fa-sign-in\" style=\"color: #FFF;\"></i>" +
+                      "</button>" +
+					"<span class=\"d-block font_footer\" style=\"color:#FFF\">Login</span>" +
+                   "</a>";
+
+                    $("#divLoginPending").html(loginCode);
+
+                }
+
+
+            });
+	
+	
+        </script>
+        <script>
+            var myColor_Background = "#fff";
+            var Color_ForeColor = "#FFF";
+            var Color_ScriptColor = "#011d28";
+
+            var something = (function () {
+                var executed = false;
+                return function () {
+                    if (!executed) {
+
+                        //document.body.style.backgroundColor = myColor_Background;
+                        $(".modal-content").css("background", myColor_Background);
+                        //$(".mobile-nav-box").css("background", "#CB8E2A");
+
+                        //Fore Color
+                        $(".color-white").css("color", Color_ForeColor);
+
+                        //Script Color
+                        $(".swiper-pagination1.swiper-pagination-clickable .swiper-pagination-bullet").css("background", Color_ScriptColor);
+                        $(".back_fore_color_td").css("background", Color_ScriptColor);
+
+
+
+                    }
+                };
+            })();
+
+            something(); // "do something" happens
+
+        
+        </script>
+        
+        
+           <script type="text/javascript">
+               document.addEventListener("deviceready", onDeviceReady, false);
+
+               // Cordova is loaded and it is now safe to call Cordova methods
+               //
+               function onDeviceReady() {
+                   //alert1('onDeviceReady');
+                   // Register the event listener
+                   document.addEventListener("backbutton", onBackKeyDown, false);
+                   document.addEventListener("pause", onPause, false);
+                   try {
+
+                       window.ga.trackView('Buy Sell');
+                   }
+                   catch (e) {
+                       //alert1("Error: " + e);
+
+                   }
+               }
+
+               function onPause() {
+                   //e.preventDefault();
+                   //navigator.app.exitApp();
+
+               }
+
+               // Handle the back button
+               //
+               function onBackKeyDown() {
+
+                   window.location.href = "index.html";
+
+                   //                var r = confirm("Do you want to Exit?");
+                   //                if (r == true) {
+                   //                    //e.preventDefault();
+                   //                    navigator.app.exitApp();
+
+                   //                } else {
+                   //                    //do nothing
+                   //                }
+                   //alert1('backbutton pressed');
+
+               }
+               var currCommand = "BUY";
+               var oInterval;
+               var locationOfPageAfterOrder = "Trades.html";
+               $(document).ready(function () {
+
+                   try {
+
+
+
+
+                       sessionStorage.exchange = "MCX";
+
+                       try {
+
+
+
+
+                           oInterval = setInterval("refreshRates()", 500);
+
+                       }
+                       catch (e) {
+                           // alert1("fnStartClock" + e);
+                       }
+
+
+                       //                   if (sessionStorage.scripname.toLowerCase().includes("diamond")) {
+                       //                        document.getElementById("qtyy_hide").style.visibility = "hidden";
+                       //                        document.getElementById("fieldsettt").style.visibility = "hidden";
+                       //                        
+                       //                        $('#qtyy_hide').css({
+                       //                            position: 'absolute',
+                       //                        });
+
+                       //                        $('#fieldsettt').css({
+                       //                            position: 'absolute',
+                       //                        });
+
+                       //                    }
+                       //                    else
+                       //                    {
+                       //                        document.getElementById("buy_sell_messagee").style.visibility = "hidden";
+                       //                    }
+
+
+                       //CallWebServiceFromJqueryGetQuantity(sessionStorage.scripcode);
+                       CallWebServiceFromJquery_QuantityLoad(sessionStorage.scripcode);
+                       //CallWebServiceFromIsAllowedDynamic();
+                       $("#ScripCode").html(sessionStorage.scripname);
+                       $("#pendingPriceText").attr("value", sessionStorage.marketprice);
+                       $('#pendingBuyButton').click(function () {
+                           locationOfPageAfterOrder = "Orders.html";
+                           currCommand = "BUY";
+                           //alert1('buy');
+                           var p = $('#pendingPriceText').val()
+                           var q = $('#mySelect').val()
+                           //alert1("|" + p + "|");
+                           //alert1("|" + q + "|");
+                           //alert1(value);
+                           //alert1(value1);
+                           var regex = new RegExp(/^\+?[0-9(),.-]+$/);
+                           if (p.match(regex) && q.match(regex)) { CallWebServiceFromJquerybuy(q, p, p, "REG"); }
+                           else {
+
+                               alert1("Enter only numeric");
+                           }
+                       });
+                       $('#pendingSellButton').click(function () {
+                           locationOfPageAfterOrder = "Orders.html";
+                           currCommand = "SELL";
+                           var p = $('#pendingPriceText').val()
+                           var q = $('#mySelect').val()
+                           //alert1("|" + p + "|");
+                           //alert1("|" + q + "|");
+                           var regex = new RegExp(/^\+?[0-9(),.-]+$/);
+                           if (p.match(regex) && q.match(regex)) { CallWebServiceFromJquerysell(q, p, p, "REG"); }
+                           else {
+
+                               alert1("Enter only numeric");
+                           }
+                       });
+                       $('#marketBuyButton').click(function () {
+                           //alert1('buy');
+                           locationOfPageAfterOrder = "Trades.html";
+                           currCommand = "BUY";
+                           //var p = askRate;
+                           //buy at the market rate
+                           var p = "0";
+                           var q = $('#mySelect').val();
+                           //alert1("|" + p + "|");
+                           //alert1("|" + q + "|");
+                           //alert1(value);
+                           //alert1(value1);
+                           var regex = new RegExp(/^\+?[0-9(),.-]+$/);
+                           if (p.match(regex) && q.match(regex)) { CallWebServiceFromJquerybuy(q, p, p, "REG"); }
+                           else {
+
+                               alert1("Enter only numeric");
+                           }
+                       });
+                       $('#marketSellButton').click(function () {
+                           locationOfPageAfterOrder = "Trades.html";
+                           currCommand = "SELL";
+                           //var p = bidRate;
+                           var p = "0";
+                           var q = $('#mySelect').val()
+                           //alert1("|" + p + "|");
+                           //alert1("|" + q + "|");
+                           var regex = new RegExp(/^\+?[0-9(),.-]+$/);
+                           if (p.match(regex) && q.match(regex)) { CallWebServiceFromJquerysell(q, p, p, "REG"); }
+                           else {
+
+                               alert1("Enter only numeric");
+                           }
+                       });
+
+
+                   }
+                   catch (err) {
+                       alert1(err);
+                   }
+
+
+               });
+
+
+
+               /*
+               * Fix for footer when the keyboard is displayed
+		 
+               $(document).on('focus', 'input, textarea', function() 
+               {
+               alert1('focus');
+               $("#tblFooter").hide();
+               //$.mobile.activePage.find("div[data-role='footer']").hide();
+               });
+
+               $(document).on('blur', 'input, textarea', function() 
+               {
+               alert1('blur');
+               $("#tblFooter").show();
+               //$.mobile.activePage.find("div[data-role='footer']").show();
+               });
+               */
+
+
+               function refreshRates() {
+                   try {
+
+                       CallWebServiceFromJqueryBidAskRate(sessionStorage.scripcode);
+                       //CallWebServiceFromJqueryBestFive(sessionStorage.scripcode);
+
+
+                   }
+                   catch (e) {
+                       //  alert1("CallWebServiceFromJquery " + e);
+                   }
+
+
+               }
+               var messages1;
+
+
+               function CallWebServiceFromJquerybuy(q, p, t, orderType) {
+                   try {
+
+
+                       //$("#pendingBuyButton").attr('disabled','disabled');
+                       //$("#marketBuyButton").attr('disabled','disabled');
+                       $('#pendingBuyButton').css("visibility", 'hidden');
+                       $('#marketBuyButton').css("visibility", 'hidden');
+                       $('#pendingSellButton').css("visibility", 'hidden');
+                       $('#marketSellButton').css("visibility", 'hidden');
+
+
+
+                       startSpinner();
+
+                       //var qty = document.getElementById("pendingQuantityText");
+                       //var q = qty.value;
+                       //var price = document.getElementById("pendingPriceText");
+                       //var p = price.value;
+                       //alert1(q);
+                       //alert1(p);
+
+                       //alert1("http://mobiletradingorder.safaribullions.com:8888/VOTSMobile/Services/xml/placeOrder/" + sessionStorage.exchange + "/" + orderType +"/" + sessionStorage.scripcode + "/" + sessionStorage.scripcode + "/" + q + "/" + q + "/" + p + "/" + window.localStorage.getItem("username") + "/1/B/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password") + "/" + t + "");
+
+
+                       $.ajax({
+                           type: "GET",
+                           url: localStorage.ipAddressOrder + ":" + localStorage.step2Port + "/VOTSMobile/Services/xml/placeOrder/" + sessionStorage.exchange + "/" + orderType + "/" + sessionStorage.scripcode + "/" + sessionStorage.scripname + "/" + q + "/" + q + "/" + p + "/" + window.localStorage.getItem("username") + "/1/B/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password") + "/" + t + "",
+                           dataType: "text",
+                           crossDomain: true,
+                           processData: false,
+                           success: OnSuccess,
+                           error: OnError,
+                           cache: false
+                       });
+
+                   }
+                   catch (e) {
+
+                   }
+
+
+               }
+               function CallWebServiceFromJquerysell(q, p, t, orderType) {
+                   try {
+
+                       $('#pendingBuyButton').css("visibility", 'hidden');
+                       $('#marketBuyButton').css("visibility", 'hidden');
+                       $('#pendingSellButton').css("visibility", 'hidden');
+                       $('#marketSellButton').css("visibility", 'hidden');
+
+                       startSpinner();
+
+                       //var qty = document.getElementById("pendingQuantityText");
+                       //var q = qty.value;
+                       //var price = document.getElementById("pendingPriceText");
+                       //var p = price.value;
+
+                       //                var ip = window.localStorage.getItem("ip");
+                       //                var port = window.localStorage.getItem("port");
+                       //                if (ip == null && port == null) {
+                       $.ajax({
+                           type: "GET",
+                           //                        url: "http://mobiletradingorder.safaribullions.com:8888/VOTSMobile/Services/xml/placeOrder/" + sessionStorage.exchange + "/" + orderType + "/" + sessionStorage.scripcode + "/" + sessionStorage.scripcode + "/" + q + "/" + q + "/" + p + "/" + window.localStorage.getItem("username") + "/1/S/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password") + "/" + t + "",
+                           url: localStorage.ipAddressOrder + ":" + localStorage.step2Port + "/VOTSMobile/Services/xml/placeOrder/" + sessionStorage.exchange + "/" + orderType + "/" + sessionStorage.scripcode + "/" + sessionStorage.scripname + "/" + q + "/" + q + "/" + p + "/" + window.localStorage.getItem("username") + "/1/S/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password") + "/" + t + "",
+                           dataType: "text",
+                           crossDomain: true,
+                           processData: false,
+                           success: OnSuccess,
+                           error: OnError,
+                           cache: false
+                       });
+                       //                }               
+
+                   }
+                   catch (e) {
+                       //   alert1("CallWebServiceFromJquery " + e);
+                   }
+
+
+               }
+
+               function OnSuccess(data, status) {
+                   try {
+                       $('#pendingBuyButton').css("visibility", 'visible');
+                       $('#marketBuyButton').css("visibility", 'visible');
+                       $('#pendingSellButton').css("visibility", 'visible');
+                       $('#marketSellButton').css("visibility", 'visible');
+
+
+
+                       stopSpinner();
+
+                       //alert1(data);
+                       if (data == "0") {
+                           refreshRates();
+
+                           alert1("Order Placed Successfully")
+
+
+                           window.location.href = locationOfPageAfterOrder;
+
+                       }
+                       else if (data == "1" || data == "2" || data == "4") {
+
+                           if (currCommand == "BUY") {
+                               alert1("Turnover Limit exceeded");
+                           }
+                           else {
+                               alert1("For sell call us");
+                           }
+
+
+                       }
+                       else if (data == "2") {
+
+                           alert1("Trade Limit exceeded")
+
+                       }
+                       else if (data == "3") {
+
+                           alert1("ClientCode Not Found")
+                       }
+                       else if (data == "4") {
+
+                           alert1("Lot Wise Limit exceeded")
+
+                       }
+                       else if (data == "5") {
+
+                           alert1("Time exceeded ")
+                       }
+                       else if (data == "6") {
+
+                           alert1("Max Lot Size exceeded ")
+                       }
+                       else if (data == "7") {
+
+                           alert1("Scrip is not allowed to trade");
+                           window.location.href = "index.html";
+                       }
+                       else if (data == "-1") {
+
+                           alert1("Other Error")
+                       }
+                       else if (data == "-2") {
+
+                           alert1("Price is not within the range");
+                       }
+                       else if (data == "-3") {
+
+                           alert1("Pending order is not allowed");
+                       }
+                       else if (data == "-4") {
+
+                           alert1("Less than minimum quantity");
+                       }
+                       else if (data == "-5") {
+
+                           alert1("Selling is not allowed");
+                       }
+
+                       else if (data == "-99") {
+
+                           alert1("Please Login to Proceed");
+                           window.location.href = "Login.html";
+                       }
+                       else if (data == "8") {
+
+                           alert1("Limit Ignored");
+
+                       }
+                       else {
+                           alert1("Unknown Error, Error No : " + data);
+                       }
+
+
+                   }
+                   catch (e) {
+                       alert1("OnSuccess : " + e);
+                   }
+
+
+               }
+
+
+
+               function OnError(request, status, error) {
+                   alert1("Error : " + error);
+                   //$("input[type=submit]").removeAttr('disabled');
+                   $('#pendingBuyButton').css("visibility", 'visible');
+                   $('#marketBuyButton').css("visibility", 'visible');
+                   //$('#pendingSellButton').css("visibility", 'visible');
+                   //$('#marketSellButton').css("visibility", 'visible');
+
+                   $.mobile.loading("hide");
+                   //alert1("OnError : " + error);
+               }
+
+               function CallWebServiceFromJqueryBidAskRate(scripList) {
+                   try {
+                       //alert1(scripList);
+
+                       //                var ip = window.localStorage.getItem("ip");
+                       //                var port = window.localStorage.getItem("port");
+                       //                if (ip == null && port == null) {
+
+                       // alert1("http://spngold.noip.us:8888/VOTSBroadcast/Services/xml/GetLiveRateMultiple/" + scripList + "");
+                       $.ajax({
+                           type: "GET",
+
+                           //url: "http://spngoldlivebroadcast.noip.us:8888/VOTSBroadcast/Services/xml/GetLiveRateMultipleMatchingTable/" + scripList + "",
+                           //                        url: "http://mobiletradingorder.safaribullions.com:8888/VOTSBroadcast/Services/xml/GetLiveRateMultiple/" + scripList + "",
+                           url: localStorage.ipAddressBCast + ":" + localStorage.step3StreamingPort + "/VOTSBroadcastStreaming/Services/xml/GetLiveRateOfScrip/" + sessionStorage.scripcode,
+                           dataType: "text",
+                           crossDomain: true,
+                           processData: false,
+                           success: OnSuccessBidAskRate,
+                           error: OnErrorBidAskRate,
+                           cache: false
+
+                       });
+                       //                }
+
+                   }
+
+                   catch (e) {
+                       //alert1("CallWebServiceFromJquery " + e);
+                   }
+
+
+               }
+
+               var bidRate = 0;
+               var askRate = 0;
+
+               //        function OnSuccessBidAskRate(data, status) {
+               //            // alert1(data);
+               //            try {
+               //                //alert1(data);
+               //                var messages1 = data.replace(/"/g, ' ');
+               //                var messages = messages1.split("\n");
+
+               //                if (typeof messages != 'undefined') {
+
+               //                    var ret = messages[1].split("\t");
+
+               //                    if (typeof ret[1] != 'undefined') {
+
+
+               //                        bidRate = ret[2].trim();
+               //                        askRate = ret[3].trim();
+               //                        //alert1($("#marketBidPrice").val());
+
+               //                        $("#marketBidPrice").html(ret[3]);
+
+
+               //                        $("#marketAskPrice").html(ret[4]);
+
+               //                    }
+
+               //                }
+
+               //            }
+               //            catch (e) {
+               //                //alert1("OnSuccess" + e);
+               //            }
+
+               //        }
+
+
+               function OnSuccessBidAskRate(data, status) {
+                   // alert1(data);
+                   try {
+                       //alert1(data);
+                       //var messages1 = data.replace(/"/g, ' ');
+                       //var messages = messages1.split("\\u000d\\u000a");
+
+                       if (typeof data != 'undefined') {
+
+                           var ret = data.split("\t");
+
+                           if (typeof ret[1] != 'undefined') {
+
+
+                               bidRate = ret[2].trim();
+                               askRate = ret[3].trim();
+                               //alert1($("#marketBidPrice").val());
+
+                               $("#marketBidPrice").html(ret[3]);
+
+
+                               $("#marketAskPrice").html(ret[4]);
+
+                           }
+
+                       }
+
+                   }
+                   catch (e) {
+                       //alert1("OnSuccess" + e);
+                   }
+
+               }
+
+
+
+
+               function OnErrorBidAskRate(request, status, error) {
+                   //alert1("Webservice Error: " + request.statusText);
+               }
+
+
+               var myScroll;
+               function loaded() {
+
+
+                   document.getElementById("wrapper").style.height = (window.innerHeight - (100 + 90 + 50)) + "px";
+                   //document.getElementById("scroller").style.height = (window.innerHeight - (0.25 * window.innerHeight)) + "px";
+                   //document.getElementById("wrapper").style.bottom = "185px";
+
+                   myScroll = new iScroll('wrapper', { hScrollbar: false, vScrollbar: true, hideScrollbar: false });
+
+               }
+
+               function CallWebServiceFromJqueryGetQuantity(scripCode) {
+                   try {
+                       //alert1('CallWebServiceFromJquery');
+                       var u = scripCode;
+                       //                var ip = window.localStorage.getItem("ip");
+                       //                var port = window.localStorage.getItem("port");
+                       //                if (ip == null && port == null) {
+                       $.ajax({
+                           type: "GET",
+                           //                        url: "http://mobiletradingorder.safaribullions.com:8888/VOTSMobile/Services/xml/getQuantityList/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password") + "/" + u + "",
+                           // url: "http://spngold.noip.us:8888/VOTSMobile/Services/xml/searchScrip/shashir1/123456/" + u +"",
+                           url: localStorage.ipAddressOrder + ":" + localStorage.step2Port + "/VOTSMobile/Services/xml/getQuantityList/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password") + "/" + u + "",
+                           dataType: "text",
+                           dataType: "text",
+                           crossDomain: true,
+                           processData: false,
+                           success: OnSuccessGetQuantity,
+                           error: OnErrorGetQuantity,
+                           cache: false
+                       });
+                       //                }
+                   }
+                   catch (e) {
+                       // alert1("CallWebServiceFromJquery " + e);
+                   }
+
+
+               }
+
+               alpha = new Array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " ", ".", ",");
+
+               function removeAllRowsFromTableGetQuantity() {
+
+                   //$("#gvData tbody tr").remove();
+                   $("#MarketOrderWindowQuantity").empty();
+
+               }
+
+               function OnSuccessGetQuantity(data, status) {
+
+                   //alert1(data);
+                   try {
+                       if (data != "") {
+                           removeAllRowsFromTableGetQuantity();
+
+                           var messages1 = data.replace("\"", "");
+                           var messages1 = messages1.replace("\"", "");
+                           var messages = messages1.split("|");
+
+                           var zebra = document.getElementById("MarketOrderWindowQuantity");
+                           var trow;
+
+                           var trowString = "<form><div class=\"ui-field-contain\"><table width=\"100%\"><tr><td width=\"30%\" align=\"right\" valign=\"center\"><label for=\"select-native-marketorder\" data-inline=\"true\">Quantity:</label></td><td width=\"70%\" align=\"left\"><select name=\"select-native-marketorder\" id=\"select-native-marketorder\" data-inline=\"true\">";
+                           for (var i = 0; i < messages.length; i++) {
+                               //var ret = jQuery.parseJSON(messages[i]);
+                               var ret = messages[i].split(",");
+                               // alert1(ret);
+                               if (typeof ret[0] != 'undefined') {
+
+                                   trowString = trowString + "<option value=\"" + ret[0] + "\">" + ret[1] + "</option>";
+
+                               }
+
+                           }
+                           trowString = trowString + "</select></td></tr></table></div></form>";
+                           //alert1(trowString);
+                           trow = $(trowString);
+                           trow.prependTo(zebra);
+                           $('#MarketOrderWindowQuantity').trigger('create');
+
+                           zebra = document.getElementById("PendingOrderWindowQuantity");
+                           trowString = "<form><div class=\"ui-field-contain\"><table width=\"100%\"><tr><td width=\"30%\" align=\"right\" valign=\"center\"><label for=\"select-native-pendingorder\" data-inline=\"true\">Quantity:</label></td><td width=\"70%\" align=\"left\"><select name=\"select-native-pendingorder\" id=\"select-native-pendingorder\" data-inline=\"true\">";
+                           for (var i = 0; i < messages.length; i++) {
+                               //var ret = jQuery.parseJSON(messages[i]);
+                               var ret = messages[i].split(",");
+                               // alert1(ret);
+                               if (typeof ret[0] != 'undefined') {
+
+                                   trowString = trowString + "<option value=\"" + ret[0] + "\">" + ret[1] + "</option>";
+
+                               }
+
+                           }
+                           trowString = trowString + "</select></td></tr></table></div></form>";
+                           //alert1(trowString);
+                           trow = $(trowString);
+                           trow.prependTo(zebra);
+                           $('#PendingOrderWindowQuantity').trigger('create');
+
+                           //zebra = document.getElementById("DynamicOrderWindowQuantity");					
+                           //trowString = "<form><div class=\"ui-field-contain\"><table width=\"100%\"><tr><td width=\"30%\" align=\"right\" valign=\"center\"><label for=\"select-native-dynamicorder\" data-inline=\"true\">Quantity:</label></td><td width=\"70%\" align=\"left\"><select name=\"select-native-dynamicorder\" id=\"select-native-dynamicorder\" data-inline=\"true\">";
+                           //for (var i = 0; i < messages.length; i++) {
+                           //	//var ret = jQuery.parseJSON(messages[i]);
+                           //	var ret = messages[i].split(",");
+                           //	// alert1(ret);
+                           //	if (typeof ret[0] != 'undefined') {
+                           //			
+                           //			trowString = trowString + "<option value=\"" + ret[0] +  "\">" + ret[1] + "</option>";
+                           //			
+                           //	}
+
+                           //}
+                           //trowString = trowString + "</select></td></tr></table></div></form>";
+                           ////alert1(trowString);
+                           //trow = $(trowString);
+                           //trow.prependTo(zebra);
+                           //$('#DynamicOrderWindowQuantity').trigger('create');
+                       }
+                   }
+                   catch (e) {
+                       //alert1(e);
+                   }
+
+
+               }
+
+
+               function OnErrorGetQuantity(request, status, error) {
+                   //alert1("error : " + error);
+               }
+
+
+
+
+
+
+               //        function CallWebServiceFromIsAllowedDynamic() {
+               //            try {
+
+
+               //                $.ajax({
+               //                    type: "GET",
+               //                    url: "http://mobiletradingorder.safaribullions.com:8888/VOTSMobile/Services/xml/isAllowDynamic/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password"),
+               //                    dataType: "text",
+               //                    crossDomain: true,
+               //                    processData: false,
+               //                    success: OnSuccessIsAllowedDynamic,
+               //                    error: OnErrorIsAllowedDynamic,
+               //                    cache: false
+               //                });
+
+               //            }
+               //            catch (e) {
+               //                // alert1("CallWebServiceFromIsAllowedDynamic " + e);
+               //            }
+
+
+               //        }
+
+
+               //        function OnSuccessIsAllowedDynamic(data, status) {
+
+               //            //alert1(data);
+               //            try {
+               //                if (data != "") {
+
+               //                    if (data == "1") {
+               //                        isAllowDynamic = true;
+               //                    }
+               //                    else {
+               //                        isAllowDynamic = false;
+               //                    }
+
+
+               //                }
+               //            }
+               //            catch (e) {
+               //                //alert1(e);
+               //            }
+
+
+               //        }
+
+
+               //        function OnErrorIsAllowedDynamic(request, status, error) {
+               //            //alert1("error : " + error);
+               //        }
+
+
+
+
+
+
+               function CallWebServiceFromJqueryBestFive(scripCode) {
+                   try {
+                       //alert1(scripList);
+
+                       //                var ip = window.localStorage.getItem("ip");
+                       //                var port = window.localStorage.getItem("port");
+                       //                if (ip == null && port == null) {
+
+                       // alert1("http://spngold.noip.us:8888/VOTSBroadcast/Services/xml/GetLiveRateMultiple/" + scripCode + "");
+                       $.ajax({
+                           type: "GET",
+
+                           url: "http://spngoldlivebroadcast.noip.us:8888/VOTSBroadcast/Services/xml/GetBestFive/" + scripCode + "",
+                           dataType: "text",
+                           crossDomain: true,
+                           processData: false,
+                           success: OnSuccessBestFive,
+                           error: OnErrorBestFive,
+                           cache: false
+
+                       });
+                       //                }
+
+                   }
+
+                   catch (e) {
+                       //alert1("CallWebServiceFromJquery " + e);
+                   }
+
+
+               }
+
+               function removeAllRowsFromTableBestFive() {
+
+
+                   $("#BestFiveWindow").empty();
+
+               }
+
+               function OnSuccessBestFive(data, status) {
+                   // alert1(data);
+                   try {
+                       //alert1(data);
+                       var messages1 = data.replace(/"/g, ' ');
+                       var messages = messages1.split("|");
+
+
+                       if (typeof messages != 'undefined') {
+
+
+                           removeAllRowsFromTableBestFive();
+                           var zebra = document.getElementById("BestFiveWindow");
+                           var trow;
+                           var trowString = "<table width=\"100%\" cellspacing=\"1\" cellpadding=\"1\" style=\"border: 1px solid white;background-color:black;color:white;\"><tr><td align=\"center\" style=\"border-right: thin solid green;border-bottom: thin solid green;color:white;\">Qty</td><td align=\"center\" style=\"border-right: thin solid white;border-bottom: thin solid green;color:white;\">Bid</td><td align=\"center\" style=\"border-right: thin solid red;border-bottom: thin solid red;color:white;\">Ask</td><td align=\"center\" style=\"border-bottom: thin solid red;color:white;\">Qty</td></tr>";
+
+                           for (var i = 0; i < messages.length; i++) {
+
+                               var ret = messages[i].split(",");
+
+                               if (typeof ret[0] != 'undefined') {
+
+
+                                   trowString = trowString + "<tr><td  align=\"center\" style=\"background-color:white;font-weight: bold;border-right: thin solid green;color:green;\">" + ret[0] + "</td><td  align=\"center\" style=\"background-color:white;font-weight: bold;border-right: thin solid white;color:green;\">" + ret[1] + "</td><td align=\"center\" style=\"background-color:white;font-weight: bold;border-right: thin solid red;color:red;\">" + ret[2] + "</td><td  align=\"center\" style=\"background-color:white;font-weight: bold;color:red;\">" + ret[3] + "</td></tr>";
+
+
+
+                               }
+
+                           }
+
+                           trowString = trowString + "</table>";
+                           //alert1(trowString);
+                           trow = $(trowString);
+                           trow.prependTo(zebra);
+
+
+                       }
+
+                   }
+                   catch (e) {
+                       //alert1("OnSuccess" + e);
+                   }
+
+               }
+
+
+
+               function OnErrorBestFive(request, status, error) {
+                   //alert1("Webservice Error: " + request.statusText);
+               }
+		
+</script>
+
+ <script>
+
+     var isAllowDynamic = false;
+     function showWindow(marketOrPending) {
+
+         if (marketOrPending == 'market') {
+             document.getElementById("MarketOrderWindow").style.display = 'block';
+             document.getElementById("PendingOrderWindow").style.display = 'none';
+             document.getElementById("DynamicOrderWindow").style.display = 'none';
+
+         }
+         else if (marketOrPending == 'pending') {
+             document.getElementById("MarketOrderWindow").style.display = 'none';
+             document.getElementById("PendingOrderWindow").style.display = 'block';
+             document.getElementById("DynamicOrderWindow").style.display = 'none';
+
+         }
+         else {
+
+             if (isAllowDynamic == true) {
+                 //check if dynamic is enabled
+                 document.getElementById("MarketOrderWindow").style.display = 'none';
+                 document.getElementById("PendingOrderWindow").style.display = 'none';
+                 document.getElementById("DynamicOrderWindow").style.display = 'block';
+             }
+             else {
+                 alert1('Dynamic order not allowed');
+             }
+
+         }
+
+     }
+
+	  
+	  </script>
+
+
+        <style>
+            .ui-page
+            {
+                background: black;
+            }
+            .ui-content
+            {
+                background: black;
+            }
+        </style>
+        <style>
+            /* unvisited link */
+            a:link
+            {
+                color: black;
+                text-decoration: none;
+            }
+            
+            /* visited link */
+            a:visited
+            {
+                color: black;
+                text-decoration: none;
+            }
+            
+            /* mouse over link */
+            a:hover
+            {
+                color: black;
+                text-decoration: none;
+            }
+            
+            /* selected link */
+            a:active
+            {
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+        <style type="text/css">
+            body
+            {
+                background-color: red;
+                background-position: center center;
+                background-attachment: scroll;
+                background-size: 100% 100%;
+            }
+            .ui-header
+            {
+                background: transparent;
+            }
+            .ui-page
+            {
+                background: transparent;
+            }
+            .ui-content
+            {
+                background: transparent;
+            }
+        </style>
+        <style>
+            .col-xs-3
+            {
+                width: 19%;
+                text-align: center;
+            }
+            footer .fa
+            {
+                font-size: 22px !important;
+            }
+        </style>
+    </div>
+</body>
+</html>

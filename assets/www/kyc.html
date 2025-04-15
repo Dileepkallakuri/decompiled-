@@ -1,0 +1,1525 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet" type="text/css" />
+    <!-- Swiper Tab Css -->
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Css Monank -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom2.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/jquery.mobile-1.4.5-monank.min.css" rel="stylesheet" type="text/css" />
+
+    <style>  
+        .col-xs-3
+        {
+            width: 19%;
+            text-align: center;
+        }
+        
+        
+        .color-white { 
+	        color: White !important;
+        }
+        
+    </style>
+
+
+    <style>
+        .row {
+            display: -ms-flexbox;
+            display: initial;
+            -ms-flex-wrap: wrap;
+            flex-wrap: initial;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+
+
+    <style>
+        .ui-mobile fieldset {
+            min-width: 0;
+            color: #000;
+        }
+    </style>
+
+
+</head>
+<body style="background: #FFF;">
+   
+  <header>
+      <div class="container">
+           
+        <nav class="navbar navbar-expand-lg nav-bg-white"> <!--id="navigation"-->
+
+            <div class="col-12 scroll-css text-center">
+                <div id="EnjoyHint3" data-intro="Menu" data-position="top"  style="display: inline-block;float: left;margin-top: 9px;">
+                    <button class="second-nav-toggler" type="button" style="background: transparent;border: 0;margin-right: 0px;">
+                        <img src="img/rb/menu.png" style="width: 25px;" />
+                    </button>
+                </div>
+
+                <div style="padding-bottom: 5px;margin-right: 30px;">
+                    <img src="img/logo.png" style="width:55%;" />
+                    <!--<a class="navbar-brand" href="index.html" style="font-weight: 800;font-size: 32px;color:#612241;">dP Gold</a>-->
+                </div>
+
+            </div>
+
+            <!--<div class="col-10 scroll-css text-center">
+                <!--<img src="img/logo.png" style="height: 50px;display: inline-block;margin-right: 5px;" />
+                <img src="img/logo1.png" style="height: 32px;display: inline-block;" />--
+             </div>-->
+
+        </nav>
+        
+      <!-- mobile manu  -->
+         <div id="mobile-nav" class="sidenav" data-prevent-default="true" data-mouse-events="true" >
+            <div class="mobile-nav-box">                
+                
+                <div class="col-xs-12 menu" style="display: inline-block;">
+                    <div class="mobile-logo">
+					    <a class="manu-close color-black">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                        <!--<img src="img/menu/menu_back.png" />-->
+                        </a>
+				    </div>
+                    
+                    <div class="mobile-logo float-left">
+					    <img class="header_Logo" src="img/logo.png" style="width: 130px;" />
+				    </div>
+                </div>
+                
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="index.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_liverates.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Live Rates</span>
+                  </a>
+                </div>
+
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Trades.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__trades.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Trades</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Trades_History.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__tradehistory.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Order History</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Orders.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_faq.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Pending Orders</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Bank_details.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_bankdetails.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Bank Details</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="BookingDesk.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_contact.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Booking Desk</span>
+                  </a>
+                </div>
+
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Message.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_message.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Messages</span>
+                  </a>
+                </div>
+
+
+
+                 <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="News.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_message.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">News</span>
+                  </a>
+                </div>
+
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="GoldTrends.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_goldtrend.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Gold Trends</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="EconomicCalendar.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu___calendar.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Economic Calendar</span>
+                  </a>
+                </div>-->
+
+
+                <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="HistoricalData.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_historicaldata.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Historical Data</span>
+                  </a>
+                </div>-->
+
+
+
+
+
+               <!-- <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="AboutUs.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__profile.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">About Us</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Alert.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_alert.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Rate Alert</span>
+                  </a>
+                </div>
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Chart.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_chart.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Live Chart</span>
+                  </a>
+                </div>-->
+
+                 <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Margin.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_margin.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Margin</span>
+                  </a>
+                </div>
+
+                <!--<div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="kyc.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu__tradehistory.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">KYC</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryDocket.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_deliverydocket.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Docket</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryStatus.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_delivarystatus.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Status</span>
+                  </a>
+                </div>
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="DeliveryCharges.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_deliverycharges.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Delivery Charges</span>
+                  </a>
+                </div>-->
+
+                <div class="col-xs-4 menu" style="display: inline-block;">
+                  <a href="Login.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/menu/menu_llogin.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Login</span>
+                  </a>
+                </div>
+
+
+                <!--<div class="col-xs-3 menu" style="display: inline-block;">
+                  <a href="Products.html" data-ajax='false'>
+                      <button type="button" style="background: transparent;border: 0;"> 
+                        <img src="img/riz/menu_product.png" />
+                   </button>
+                   <span class="d-block font_footer" style="color:#FFF">Products</span>
+                  </a>
+                </div>-->
+
+
+
+
+
+        </div>
+    </div>
+    <!-- Navigation Part End -->
+
+
+   
+      </div>
+
+    </header>
+
+    <div style="padding: 20px 0;">
+        <span style="color: #612241;text-transform: uppercase;display: block;padding: 0 25px;font-weight: 600;font-size: 14px;">
+            KYC
+        </span>
+    </div>
+
+
+    
+
+    <style>
+                .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+                    background-color: transparent;
+                }
+                
+                legend {
+                    color: #FFF !Important;
+                    width: 90%;
+                }
+                
+            </style>
+
+
+      
+   
+     <form id="myForm">
+ <div class="container" style="padding-right: 0px;padding-left: 0px;">
+            
+             <div class="row">              
+                <div class="col-lg-12 col-xs-12" style="margin-top: 15px;padding-right: 0px;padding-left: 0px;">  <!--style="background-color:#FFF"-->
+                     
+                    
+
+                     <fieldset style="text-align:center !Important;border:2px solid #ef7f1a;margin:10px;">
+            <legend style="font-weight:bold;font-size:120%;width: 90%;">Company Details</legend>
+            
+			
+			
+ 
+   <table style="margin:10px !Important;" id="tblGenerateOTP" border="0px">
+   
+			 <tr>
+			<td align="center" class="style2" >
+			
+			<label class="labelHeadings" for="name">Name : *</label>
+				  <input id="name" name="name" type="text" value="" placeholder=""
+					 class="customfont" /></td>
+		 </tr>
+		
+		 <tr>
+		 
+			<td align="center" class="style2" >
+			<label class="labelHeadings" for="companyname">Company Name : *</label>
+				  <input id="companyname" name="companyname" type="text" value="" placeholder=""
+					  class="customfont" /></td>
+		 </tr>
+	
+		 <tr>
+			<td align="center" class="style2" >
+			<label class="labelHeadings" for="mobile">Mobile Number : *</label>
+				  <input id="mobile" name="mobile" type="number" value="" placeholder=""
+					  class="customfont" /></td>
+					 
+		 </tr>
+
+		 <tr>
+			<td align="center" class="style2" >
+			<label class="labelHeadings" for="emailid">Email Id : </label>
+				  <input id="emailid" name="emailid" type="text" value="" placeholder=""
+					 class="customfont" /></td>
+		 </tr>
+		 
+		 <tr>
+			<td align="center" class="style2" >
+			<label class="labelHeadings" for="address">Address : *</label>
+				<textarea cols="40" rows="8" name="address" id="address"></textarea>
+
+		 </tr>
+
+		<tr>
+			<td align="center" class="style2" >
+			<label class="labelHeadings" for="city">City : *</label>
+				  <input id="city" name="city" type="text" value="" placeholder=""
+					 class="customfont" /></td>
+		 </tr>
+		 
+		<tr>
+			<td align="center" class="style2" >
+			
+			<div id="gvDataState"></div>
+			
+		 </tr>
+		 
+		<tr>
+			<td align="center" class="style2" >
+			<label class="labelHeadings" for="pincode">Pincode : *</label>
+				  <input id="pincode" name="pincode" type="number" value="" placeholder=""
+					  class="customfont" /></td>
+		 </tr>
+		
+		
+		<tr>
+			<td align="center" class="style2" >
+			<label class="labelHeadings" for="gst">GST Number : *</label>
+				  <input id="gst" name="gst" type="text" value="" placeholder=""
+					 class="customfont" /></td>
+		 </tr>
+		 
+		 
+		 <tr>
+			<td align="center" class="style2" >
+			<label class="labelHeadings" for="natureofbusiness">Nature of Business : *</label>
+				  <input id="natureofbusiness" name="natureofbusiness" type="text" value="" placeholder=""
+					  class="customfont" /></td>
+		 </tr>
+		 
+		
+ 
+ </table>
+ 
+          </fieldset>
+		  
+ 
+ 
+ 
+ 
+ <fieldset style="text-align:center !Important;border:2px solid #ef7f1a;margin:10px;padding:10px;">
+            <legend style="font-weight:bold;font-size:120%;">Bank Details</legend>
+ 
+			
+			<label class="labelHeadings" for="accountno">Account No : *</label>
+				  <input id="accountno" name="accountno" type="text" value="" placeholder=""
+					  class="customfont" />
+		
+		
+		 
+			
+			<label class="labelHeadings" for="bankname">Bank Name : *</label>
+				  <input id="bankname" name="bankname" type="text" value="" placeholder=""
+					  class="customfont" />
+		 
+	
+		 
+			
+			<label class="labelHeadings" for="ifsccode">IFSC Code : *</label>
+				  <input id="ifsccode" name="ifsccode" type="text" value="" placeholder=""
+					  class="customfont" />
+					 
+		
+
+		
+			
+			<label class="labelHeadings" for="bankaccountname">Bank Account Name : *</label>
+				  <input id="bankaccountname" name="bankaccountname" type="text" value="" placeholder=""
+					  class="customfont" />
+		 
+		 
+		
+
+		
+			
+			<label class="labelHeadings" for="branch">Branch : *</label>
+				  <input id="branch" name="branch" type="text" value="" placeholder=""
+					  class="customfont" />
+		 
+		 
+		
+		
+			
+			
+				
+ 
+ </table>
+ 
+ </fieldset>
+ 
+ 
+ 
+ 
+ <fieldset style="text-align:center !Important;border:2px solid #ef7f1a;margin:10px;padding:10px;">
+            <legend style="font-weight:bold;font-size:120%;">Persons Authorized for Delivery</legend>
+ 
+			
+			<label class="labelHeadings" for="authorisedPerson1">Name 1 : </label>
+				  <input id="authorisedPerson1" name="authorisedPerson1" type="text" value="" placeholder=""
+					  class="customfont" />
+		
+		
+		 
+			
+			<label class="labelHeadings" for="authorisedPerson2">Name 2 : </label>
+				  <input id="authorisedPerson2" name="authorisedPerson2" type="text" value="" placeholder=""
+					  class="customfont" />
+		 
+	
+		 
+			
+			<label class="labelHeadings" for="authorisedPerson3">Name 3 : </label>
+				  <input id="authorisedPerson3" name="authorisedPerson3" type="text" value="" placeholder=""
+					  class="customfont" />
+					 
+		
+
+		
+			
+			<label class="labelHeadings" for="authorisedPerson4">Name 4 : </label>
+				  <input id="authorisedPerson4" name="authorisedPerson4" type="text" value="" placeholder=""
+					  class="customfont" />
+				
+ 
+ </table>
+ 
+ </fieldset>
+ 
+  <div id="btnSave" style="height: 10px;text-align:center;">
+		   <input type="button" value="SAVE"  style="background-color:#72c7f0; color: red; font-size:150%;padding:10px;" />
+		   </div><br />
+		   
+		   
+		   </form>
+ 
+ <fieldset style="text-align:center !Important;border:2px solid #ef7f1a;margin:10px;padding:10px;margin-top: 37px;">
+            <legend style="font-weight:bold;font-size:120%;">Documents Required</legend>
+ 
+			
+			<label class="labelHeadings" >Company Incorporation Certificate/Partnership Deed</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button data-ajax="false" class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('CompanyIncorporationCertificate','imgCompanyIncorporationCertificate');return false;">Camera</button>
+				
+				</td>
+				<td width="50%">
+				<!--<input type="file" name="CompanyIncorporationCertificate"  onchange="previewFile()">-->
+				<button data-ajax="false"  class="btn_kyc" style="width:100%;" onclick="javascript:getImage('CompanyIncorporationCertificate','imgCompanyIncorporationCertificate');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgCompanyIncorporationCertificate" src="" />			
+				</td>
+				</tr>
+				</table>
+	
+	
+	
+				<label class="labelHeadings" >Communication Address Proof</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('CommunicationAddressProof','imgCommunicationAddressProof');return false;">Camera</button>
+				</td>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getImage('CommunicationAddressProof','imgCommunicationAddressProof');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgCommunicationAddressProof" src="" />			
+				</td>
+				</tr>
+				</table>
+	
+	
+	<label class="labelHeadings" >Company PAN</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('CompanyPAN','imgCompanyPAN');return false;">Camera</button>
+				</td>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getImage('CompanyPAN','imgCompanyPAN');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgCompanyPAN" src="" />			
+				</td>
+				</tr>
+				</table>
+		
+		
+	
+		 
+		 
+			
+			
+			 
+		 <label class="labelHeadings" >Memorandum of association</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('MemorandumOfAssociation','imgMemorandumOfAssociation');return false;">Camera</button>
+				</td>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getImage('MemorandumOfAssociation','imgMemorandumOfAssociation');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgMemorandumOfAssociation" src="" />			
+				</td>
+				</tr>
+				</table>
+				
+				 <label class="labelHeadings" >GST Certificate</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('GSTCertificate','imgGSTCertificate');return false;">Camera</button>
+				</td>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getImage('GSTCertificate','imgGSTCertificate');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgGSTCertificate" src="" />			
+				</td>
+				</tr>
+				</table>
+			
+		
+			
+			
+					 <label class="labelHeadings" >Authorised Person 1 Photo</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('AuthorisedPerson1','imgAuthorisedPerson1');return false;">Camera</button>
+				</td>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getImage('AuthorisedPerson1','imgAuthorisedPerson1');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgAuthorisedPerson1" src="" />			
+				</td>
+				</tr>
+				</table>
+ 
+  <label class="labelHeadings" >Authorised Person 2 Photo</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('AuthorisedPerson2','imgAuthorisedPerson2');return false;">Camera</button>
+				</td>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getImage('AuthorisedPerson2','imgAuthorisedPerson2');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgAuthorisedPerson2" src="" />			
+				</td>
+				</tr>
+				</table>
+ 
+  <label class="labelHeadings" >Authorised Person 3 Photo</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('AuthorisedPerson3','imgAuthorisedPerson3');return false;">Camera</button>
+				</td>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getImage('AuthorisedPerson3','imgAuthorisedPerson3');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgAuthorisedPerson3" src="" />			
+				</td>
+				</tr>
+				</table>
+ 
+  <label class="labelHeadings" >Authorised Person 4 Photo</label>
+			<table style="width:100%">
+				<tr>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getCamera('AuthorisedPerson4','imgAuthorisedPerson4');return false;">Camera</button>
+				</td>
+				<td width="50%">
+				<button class="btn_kyc" style="width:100%;" onclick="javascript:getImage('AuthorisedPerson4','imgAuthorisedPerson4');return false;">Upload a Photo</button>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+					<img style="height:100px;" id="imgAuthorisedPerson4" src="" />			
+				</td>
+				</tr>
+				</table>
+ 
+ 
+ </fieldset>
+ 
+ <style>
+     .ui-btn.ui-input-btn.ui-corner-all.ui-shadow
+     {
+         text-align: center;
+         padding: 15px;
+         line-height: 0px !important;
+         background: #e4a40a;
+     }
+ </style>
+
+
+
+
+
+  
+  
+
+
+    </main>
+       <footer class="footer">
+
+          <div class="col-xs-3" style="display: inline-block;">
+            <a href="index.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <i class="fa fa-bar-chart" style="color: #FFF !Important;"></i>
+                </button>
+                <span class="d-block font_footer" style="color:#FFF !Important;">Live Rates</span>
+            </a>
+        </div>
+
+        <div class="col-xs-3" style="display: inline-block;">
+            <a href="Trades.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <!--id="go"-->
+                    <i class="fa fa-book" style="color: #FFF;"></i> <!--color-white-->
+                </button>
+                <span class="d-block font_footer" style="color:#FFF">Trades</span>
+            </a>
+        </div>
+
+        <div class="col-xs-3" style="display: inline-block;">
+              <a href="Orders.html" data-ajax='false'><button type="button" style="background: transparent;border: 0;">
+                <i class="fa fa-pencil-square-o" style="color: #FFF;"></i>
+           </button>
+           <span class="d-block font_footer" style="color:#FFF">Pending Orders</span></a>
+        </div>
+
+        <div class="col-xs-3" style="display: inline-block;">
+            <a href="Message.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <!--id="go"-->
+                    <i class="fa fa-bell" style="color: #FFF;"></i> <!--color-white-->
+                </button>
+                <span class="d-block font_footer" style="color:#FFF">Messages</span>
+            </a>
+        </div>
+
+
+       <div class="col-xs-3" style="display: inline-block;">
+            <a href="DeliveryLifted.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <i class="fa fa-book" style="color: #FFF;"></i>
+                </button>
+                <span class="d-block font_footer" style="color:#FFF">Trade History</span>
+            </a>
+        </div>
+ 
+
+        
+        <div class="col-xs-12 col-md-12" style="display: block;background: #FFF;padding: 5px 15px 0px;height: 22px;">
+            <span class="text-muted" style="display: inline-block;float: left;font-size: 11px;">
+                <p class="nomargin" style="margin-bottom: 0rem;">© dP Gold</p>
+            </span>
+
+            <span class="text-muted" style="display: inline-block;float: right;font-size: 11px;">
+                <!--<p class="nomargin" style="margin-bottom: 0rem;">Powered by : Chirayu Software ®</p>-->
+            </span>
+        </div>
+            
+            
+
+</footer>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="js/jquery-3.2.1.slim.min.js" type="text/javascript"></script>-->
+    <!--<script src="js/jquery.min.js" type="text/javascript"></script>-->
+
+    <script src="Scripts/jquery-1.11.3.min.js"></script>
+    <script src="Scripts/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- <script src="js/swiper.min.js" type="text/javascript"></script>    -->
+   
+   <script src="js/spin.min.js" type="text/javascript"></script>
+    <script src="js/Spinner.Chirayu.js" type="text/javascript"></script>
+
+    <script src="js/custom.js" type="text/javascript"></script>
+	  <script type="text/javascript" src="cordova.js"></script>
+	  <script src="js/Alert.Chirayu.js" type="text/javascript"></script>
+         <script type="text/javascript" src="js/index.js"></script>
+
+         <script src="js/UploadFile.Chirayu.js" type="text/javascript"></script>
+
+         <script src="js/online_offline.js" type="text/javascript"></script>
+          <div id="connectiondiv" class="connectiondiv" style=""> 
+            <label align="center" id="connectionmsg" class="connectionmsg">Please check your internet connection</label>
+            <!--<button style="float:right">Reload</button>-->
+            <a id="connectionbtn" onclick="javascript:connectionbtn()" class="retry_connection_btn">Retry</a>
+            </div>
+    <script type="text/javascript">
+        app.initialize();
+        </script>
+	
+	
+	 <script>
+
+
+
+        $(document).ready(function () {
+
+
+
+			if (localStorage.username)
+			{
+				
+				var pendingCode = "<a href=\"Orders.html\" data-ajax='false'>" +
+                   "<button type=\"button\" style=\"background: transparent;border: 0;\">" +
+                    "<i class=\"fa fa-pencil-square-o\" style=\"color: #FFF;\"></i>" +
+                      "</button>" + 
+					"<span class=\"d-block font_footer\" style=\"color:#FFF\">Pending</span>" +
+                   "</a>";
+			
+				$("#divLoginPending").html(pendingCode);
+			
+			}
+			else{
+
+				var loginCode = "<a href=\"Login.html\" data-ajax='false'>" +
+                   "<button type=\"button\" style=\"background: transparent;border: 0;\">" +
+                    "<i class=\"fa fa-sign-in\" style=\"color: #FFF;\"></i>" +
+                      "</button>" + 
+					"<span class=\"d-block font_footer\" style=\"color:#FFF\">Login</span>" +
+                   "</a>";
+			
+				$("#divLoginPending").html(loginCode);
+			
+			}
+			
+
+        });
+	
+	
+    </script>
+	
+	
+    <!--<script src="js/nav.js" type="text/javascript"></script>-->
+    <!--Change Color Pencil-->
+    <script>
+        var myColor_Background = "#da0000";
+        var Color_ForeColor = "#FFF";
+        var Color_ScriptColor = "#011d28";
+
+        var something = (function () {
+            var executed = false;
+            return function () {
+                if (!executed) {
+
+                    //document.body.style.backgroundColor = myColor_Background;
+                    //document.body.style.backgroundColor = '#FFF';
+                    $(".modal-content").css("background", myColor_Background);
+                    //$(".mobile-nav-box").css("background", "#CB8E2A");
+
+                    //Fore Color
+                    $(".color-white").css("color", Color_ForeColor);
+
+                    //Script Color
+                    $(".swiper-pagination1.swiper-pagination-clickable .swiper-pagination-bullet").css("background", Color_ScriptColor);
+                    $(".back_fore_color_td").css("background", Color_ScriptColor);
+
+
+
+                }
+            };
+        })();
+
+        something(); // "do something" happens
+
+        
+    </script>
+    <!--Progress Bar-->
+   
+
+
+
+      <!--Model 2-->
+    <div class="modal fade" id="myModal_QuickCall" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content goldblock" style="border: 1px solid rgba(255, 247, 216, 0.63);">
+                <table width="100%" align="center" style="text-align: center;">
+                    <tr>
+                        <td>
+                            <!--style="padding-bottom: 3%;"-->
+                            <table id="Table11" class="color-white Trending_Table_Child2" width="100%">
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="color-gold" style="text-align: center; text-decoration: underline; padding: 7px 10px;
+                                            text-transform: uppercase;">
+                                            Sales Desk</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <!--back_fore_color_td-->
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:+971 422 62618">+971 422 62618</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="https://api.whatsapp.com/send?phone=919978593937" data-ajax='false'>+971 524455063 <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 22px;color: #43e843;margin-left: 3px;"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-envelope-o color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="mailto:sales@rizanjewellery.com">sales@rizanjewellery.com</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="Table1" class="color-white Trending_Table_Child2" width="100%">
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="color-gold" style="text-align: center; text-decoration: underline; padding: 7px 10px;
+                                            text-transform: uppercase;">
+                                            Dealing/Fixing Desk</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="tel:+971 422 59549">+971 422 59549</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left; padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-envelope-o color-gold color-scroll-black" aria-hidden="true" style="font-size: 20px;
+                                                margin-right: 5px;"></i><a class="color-white" href="mailto:info@rizanbullion.com">info@rizanbullion.com</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="close" data-dismiss="modal" style="padding-top: 20px;
+                    padding-bottom: 20px; text-decoration: underline;">
+                    Close &times;</button>
+            </div>
+        </div>
+    </div>
+     
+	<script type="text/javascript">
+
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // Cordova is loaded and it is now safe to call Cordova methods
+        //
+        function onDeviceReady() {
+            //alert1('onDeviceReady');
+            // Register the event listener
+            //document.addEventListener("backbutton", onBackKeyDown, false);
+            document.addEventListener("pause", onPause, false);
+
+            try {
+
+                window.ga.trackView('kyc');
+            }
+            catch (e) {
+                //alert1("Error: " + e);
+
+            }
+
+
+            
+
+        }
+
+        function onPause() {
+            //e.preventDefault();
+            //navigator.app.exitApp();
+
+        }
+
+        // Handle the back button
+        //
+        function onBackKeyDown() {
+
+        window.location.href = "index.html";
+
+            //                var r = confirm("Do you want to Exit?");
+            //                if (r == true) {
+            //                    //e.preventDefault();
+            //                    navigator.app.exitApp();
+
+            //                } else {
+            //                    //do nothing
+            //                }
+            //alert1('backbutton pressed');
+
+        }
+		
+
+        function isGSTCorrect(gstnumber) {
+            var gstinformat = new RegExp('^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$');
+
+            if (gstinformat.test(gstnumber)) {
+
+                return true;
+
+            }
+            else {
+
+                return false;
+
+            }
+        }
+
+
+        var username1;
+		
+
+		$('form#id').submit(function(e){
+			startSpinner();
+			//$(this).children('input[type=submit]').attr('disabled', 'disabled');
+			// this is just for demonstration
+			saveKYCForm();
+			e.preventDefault(); 
+			return false;
+		});
+
+		function saveKYCForm()
+		{
+		
+			 var name = $('#name').val();
+
+                    var mobile = $('#mobile').val();
+                    //password
+                    var otp = window.localStorage.getItem("password");
+                    var usernameFromOTP = window.localStorage.getItem("username");
+
+                    var companyname = $('#companyname').val();
+                    var emailid = $('#emailid').val();
+                    var address = $('#address').val();
+                    var city = $('#city').val();
+                    var state = $('#select-native-stateList').val();
+                    var pincode = $('#pincode').val();
+                    var gst = $('#gst').val();
+                    var natureofbusiness = $('#natureofbusiness').val();
+                    var accountno = $('#accountno').val();
+                    var bankname = $('#bankname').val();
+                    var ifsccode = $('#ifsccode').val();
+                    var bankaccountname = $('#bankaccountname').val();
+                    var branch = $('#branch').val();
+
+                    if (!isGSTCorrect(gst)) {
+                        alert1("Error, GST Number is incorrect");
+                        return false;
+                    }
+
+
+                    if (name.length == 0 || mobile.length == 0 || companyname.length == 0 || address.length == 0 || city.length == 0 || pincode.length == 0 || gst.length == 0 || natureofbusiness.length == 0 || accountno.length == 0 || bankname.length == 0 || ifsccode.length == 0 || bankaccountname.length == 0 || branch.length == 0) {
+                        alert1("Error, Please Complete Full KYC Form to save it.");
+                    }
+                    else {
+					
+							 try{
+		  
+		   var oReq = new XMLHttpRequest();
+						
+var formData = new FormData(document.getElementById("myForm"));
+		   
+		   formData.append('Username', window.localStorage.getItem("username"));
+		   formData.append('Password', window.localStorage.getItem("password"));
+		   
+		   <!-- formData.append('FileType',  'image'); -->
+		   
+//var params = 'name=anjali';
+
+								oReq.open("POST", localStorage.miniadminAPI + "/KYCUpload", true);
+								 oReq.onreadystatechange = function() {
+   if (oReq.readyState != 4)  { return; }
+
+   var serverResponse = JSON.parse(oReq.responseText);
+   alert1(serverResponse);
+ };
+
+								//oReq.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');			
+								oReq.send(formData);
+							console.log(oReq.responseText);
+           
+		   }
+		 catch(ex)	
+			{
+				alert1(ex);
+				
+			}
+                      //  CallWebServiceFromJquery(usernameFromOTP, otp);
+
+                    }
+
+                    return false;
+		
+		}
+		
+        $(document).ready(function () {
+
+            try {
+
+           //     CallWebServiceFromJqueryGetState();
+
+
+				
+                    var p = window.localStorage.getItem("password");
+                    var u = window.localStorage.getItem("username");
+					if (u)
+					{
+						CallWebServiceFromJqueryGetKYC(u, p);
+						
+						
+						try {
+
+							if (window.localStorage.getItem("username")) {
+
+								var documentURL = localStorage.miniadminAPI + "/GetDocumentPhoto/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password");
+
+								$("#imgCompanyIncorporationCertificate").attr("src", documentURL + "/CompanyIncorporationCertificate");
+								$("#imgCommunicationAddressProof").attr("src", documentURL + "/CommunicationAddressProof");
+								$("#imgCompanyPAN").attr("src", documentURL + "/CompanyPAN");
+								$("#imgCancelledCheque").attr("src", documentURL + "/CancelledCheque");
+								$("#imgBeneficiaryDeclarationDocument").attr("src", documentURL + "/BeneficiaryDeclarationDocument");
+								$("#imgMemorandumOfAssociation").attr("src", documentURL + "/MemorandumOfAssociation");
+								$("#imgGSTCertificate").attr("src", documentURL + "/GSTCertificate");
+								$("#imgAuthorisedPerson1").attr("src", documentURL + "/AuthorisedPerson1");
+								$("#imgAuthorisedPerson2").attr("src", documentURL + "/AuthorisedPerson2");
+								$("#imgAuthorisedPerson3").attr("src", documentURL + "/AuthorisedPerson3");
+								$("#imgAuthorisedPerson4").attr("src", documentURL + "/AuthorisedPerson4");
+								
+								
+								
+
+							}
+
+
+
+						}
+						catch (e) {
+							alert1(e);
+
+						}
+					}
+                   else{
+						//alert1("Please Login to Proceed");					
+				   }
+				
+                $('#name').val(window.localStorage.getItem("kycname"));
+                $('#mobile').val(window.localStorage.getItem("kycmobile"));
+                $('#companyname').val(window.localStorage.getItem("kyccompanyname"));
+
+                $('#btnSave').click(function () {
+
+                    //alert1("btnSave");
+                    saveKYCForm();
+                   
+
+                });
+
+            }
+            catch (err) {
+
+            }
+
+
+        });
+
+
+        //  document.addEventListener("deviceready", onDeviceReady, false);
+
+
+        function onDeviceReady() {
+
+
+        }
+
+        function CallWebServiceFromJquery(u, p) {
+		
+            try {
+               
+                startSpinner();
+                
+                var name = $('#name').val();
+                var mobile = $('#mobile').val();
+                var otp = p;
+                var usernameFromOTP = window.localStorage.getItem("username");
+                var companyname = $('#companyname').val();
+                var emailid = $('#emailid').val();
+                var address = $('#address').val();
+                var city = $('#city').val();
+                var state = $('#select-native-stateList').val();
+                var pincode = $('#pincode').val();
+                var gst = $('#gst').val();
+                var natureofbusiness = $('#natureofbusiness').val();
+                var accountno = $('#accountno').val();
+                var bankname = $('#bankname').val();
+                var ifsccode = $('#ifsccode').val();
+                var bankaccountname = $('#bankaccountname').val();
+                var branch = $('#branch').val();
+                //alert1(usernameFromOTP);
+                //alert1(otp);
+
+                $.ajax({
+                    type: "GET",
+                    url: localStorage.ipAddressOrder + ":" + localStorage.step2Port + "/VOTSMobile/Services/xml/saveKYC/" + usernameFromOTP + "/" + otp + "/" + name + "/" + companyname + "/" + mobile + "/" + emailid + "/" + address + "/" + city + "/" + state + "/" + gst + "/" + natureofbusiness + "/" + accountno + "/" + bankname + "/" + ifsccode + "/" + bankaccountname + "/" + branch + "/" + pincode,
+                    dataType: "text",
+                    crossDomain: true,
+                    processData: false,
+                    success: OnSuccess,
+                    error: OnError,
+                    cache: false
+                });
+
+
+
+            }
+            catch (e) {
+                // alert1("CallWebServiceFromJquery " + e);
+            }
+
+
+        }
+
+
+
+
+
+        function OnSuccess(data, status) {
+            // alert1(data);
+
+            // alert1(sessionStorage.username)
+            try {
+                stopSpinner();
+
+                if (parseInt(data) >= 1) {
+                    alert1("KYC Updated.");
+
+                }
+                else {
+
+                    alert1("Error, Could not update KYC. Error Code : " + data);
+
+                }
+                //               
+
+
+            }
+            catch (e) {
+                alert1("Error : " + e);
+            }
+
+
+        }
+
+
+        function OnError(request, status, error) {
+            stopSpinner();
+            alert1("Error : " + error);
+        }
+
+
+
+        function CallWebServiceFromJqueryGetKYC(u, p) {
+            try {
+			//	alert1(p);
+                startSpinner();
+
+                $.ajax({
+                    type: "GET",
+                    url: localStorage.miniadminAPI + "/GetKYCDetails/" + u + "/" + p,
+                    dataType: 'json',
+                    crossDomain: true,
+                    processData: false,
+                    success: OnSuccessGetKYC,
+                    error: OnErrorGetKYC,
+                    cache: false
+                });
+
+
+
+            }
+            catch (e) {
+                 alert1("CallWebServiceFromJquery " + e);
+            }
+
+
+        }
+
+
+
+
+
+        function OnSuccessGetKYC(data, status) {
+		
+		
+		var Name;
+		var MobileNumber;
+		var CompanyName;
+		var EmailID;
+		var Address;
+		var City;
+		var Pincode;
+		var GSTNumber;
+		var NatureOfBusiness;
+		var BankAccountNo;
+		var BankName;
+		var IFSCCode;
+		var BankAccountName;
+		var Branch;
+		var UserName;
+		var AuthorisedPerson1;
+		var AuthorisedPerson2;
+		var AuthorisedPerson3;
+		var AuthorisedPerson4;
+		
+		
+		
+		for (var key in data) {
+  if (data.hasOwnProperty(key)) {
+    var val = data[key];
+	 Name=val.Name;
+	MobileNumber=val.MobileNumber;
+	CompanyName=val.CompanyName;
+	EmailID=val.EmailID;
+	Address=val.Address;
+	City=val.City;
+	Pincode=val.Pincode;
+	GSTNumber=val.GSTNumber;
+	NatureOfBusiness=val.NatureOfBusiness;
+	BankAccountNo=val.BankAccountNo;
+	BankName=val.BankName;
+	IFSCCode=val.IFSCCode;
+	BankAccountName=val.BankAccountName;
+	Branch=val.Branch;
+	UserName=val.UserName;
+	AuthorisedPerson1 = val.AuthorisedPerson1;
+	AuthorisedPerson2 = val.AuthorisedPerson2;
+	AuthorisedPerson3 = val.AuthorisedPerson3;
+	AuthorisedPerson4 = val.AuthorisedPerson4;
+	
+    console.log(val.ID);
+  }
+}
+		<!-- document.write(data.length); -->
+			<!-- var obj = JSON.parse(data); -->
+       <!-- alert1(obj.cenas); -->
+            // alert1(sessionStorage.username)
+            try { 
+                stopSpinner();
+
+                if (data.length >= 0) {
+                   
+                    $('#name').val(Name);
+                    $('#mobile').val(MobileNumber);
+                    $('#companyname').val(CompanyName);
+                    $('#emailid').val(EmailID);
+                    $('#address').val(Address);
+                    $('#city').val(City);
+                  //  $('#select-native-stateList').val(ret[11]).selectmenu('refresh'); ;
+                    $('#pincode').val(Pincode);
+                    $('#gst').val(GSTNumber);
+                    $('#natureofbusiness').val(NatureOfBusiness);
+                    $('#accountno').val(BankAccountNo);
+                    $('#bankname').val(BankName);
+                    $('#ifsccode').val(IFSCCode);
+                    $('#bankaccountname').val(BankAccountName);
+                    $('#branch').val(Branch);
+					$('#authorisedPerson1').val(AuthorisedPerson1);
+					$('#authorisedPerson2').val(AuthorisedPerson2);
+					$('#authorisedPerson3').val(AuthorisedPerson3);
+					$('#authorisedPerson4').val(AuthorisedPerson4);
+
+                }
+                else {
+
+                    alert1("Error, Could not get KYC. Error Code : " + data);
+
+                }
+                //               
+
+
+            }
+            catch (e) {
+                alert1("Error : " + e);
+            }
+
+
+        }
+
+
+        function OnErrorGetKYC(request, status, error) {
+            stopSpinner();
+
+            alert1("Error : " + error);
+        }
+
+
+
+        function CallWebServiceFromJqueryGetState() {
+            try {
+                //alert1('CallWebServiceFromJquery');
+
+                $.ajax({
+                    type: "GET",
+                    url: localStorage.ipAddressOrder + ":" + localStorage.step2Port + "/VOTSMobile/Services/xml/getStateList/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password"),
+                    dataType: "text",
+                    crossDomain: true,
+                    processData: false,
+                    success: OnSuccessGetState,
+                    error: OnErrorGetState,
+                    cache: false
+                });
+
+            }
+            catch (e) {
+                // alert1("CallWebServiceFromJquery " + e);
+            }
+
+
+        }
+
+
+
+        function removeAllRowsFromTableGetState() {
+
+            //$("#gvData tbody tr").remove();
+            $("#gvDataState").empty();
+
+        }
+
+        function OnSuccessGetState(data, status) {
+
+            //alert1(data);
+            try {
+                if (data != "") {
+                    removeAllRowsFromTableGetState();
+
+                    var messages1 = data.replace("\"", "");
+                    var messages1 = messages1.replace("\"", "");
+                    var messages = messages1.split(",");
+
+                    var zebra = document.getElementById("gvDataState");
+                    var trow;
+
+                    var trowString = "<form><div class=\"ui-field-contain\"><table width=\"100%\"><tr><td width=\"30%\" align=\"right\" valign=\"center\"><label for=\"select-native-stateList\" data-inline=\"true\">State:</label></td><td width=\"70%\" align=\"left\"><select name=\"select-native-stateList\" id=\"select-native-stateList\" data-inline=\"true\">";
+                    for (var i = 0; i < messages.length; i++) {
+                        if (typeof messages[i] != 'undefined') {
+
+                            trowString = trowString + "<option value=\"" + messages[i] + "\">" + messages[i] + "</option>";
+
+                        }
+
+                    }
+                    trowString = trowString + "</select></td></tr></table></div></form>";
+
+                    //alert1(trowString);
+                    trow = $(trowString);
+                    trow.prependTo(zebra);
+                    $('#gvDataState').trigger('create');
+
+
+                }
+            }
+            catch (e) {
+                //alert1(e);
+            }
+
+
+        }
+
+
+        function OnErrorGetState(request, status, error) {
+            //alert1("error : " + error);
+        }
+	   
+    </script>
+
+
+</body>
+</html>

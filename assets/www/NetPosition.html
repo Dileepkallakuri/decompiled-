@@ -1,0 +1,689 @@
+﻿
+
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VOTS Game NetPosition</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/iscroll.js" type="text/javascript"></script>
+    <link href="css/table.css" rel="stylesheet" type="text/css" />
+   <!-- <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>-->
+    <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+  
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    
+     <!-- Custom Css Monank -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom2.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
+
+
+<style>		
+		
+		/* unvisited link */
+a:link {
+    color: black;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: black;
+	text-decoration: none;
+}
+		</style>
+		
+<style>
+body {
+    background-color: white;
+}
+</style>
+
+ <style>
+        .col-xs-3
+        {
+            width: 19%;
+            text-align: center;
+        }
+        footer .fa
+        {
+            font-size: 22px !important;
+        }
+        .color-white {
+	color: White !important;
+}
+    </style>
+		
+</head>
+<body onload="loaded()" >
+    <form id="form1" runat="server">
+
+
+     <header>
+      <!-- Fixed navbar -->
+      <div class="container" style="background-color:#22a6dd;">
+
+       <!-- Navigation Part Start -->
+        <nav id="navigation" class="navbar navbar-expand-lg nav-bg-white" >
+            <div class="container"  >
+                <div class="col-5 scroll-css" style="padding:0px">
+					<img src="img/sg/Name.png" style="width: 100%;padding: 4px 0;" />
+                    <!-- <img src="img/logo1.png" style="width: 100%;padding: 4px 0;" /> -->
+
+                    <!--<a class="navbar-brand color-white" href="index.html" style="font-family: -webkit-body;
+                    font-size: 30px;
+                    color: #FFF;
+                    font-weight: 800;
+                    padding-top: 2px;">SUVIDHI <span class="inner_logo_font">GOLD PVT. LTD.</span></a>--> <!--e88b18-->
+
+                </div>
+
+                <div class="col-3 scroll-css text-center" style="padding:0px">
+					<img src="img/sg/logo.png" style="width: 70%;padding: 4px 0;" />
+                    <!-- <img src="img/logo1.png" style="width: 100%;padding: 4px 0;" /> -->
+                </div>
+
+                <div class="col-4 scroll-css" style="padding:0px;">
+                    <div class="collapse navbar-collapse" id="nav-list">
+                        <ul class="navbar-nav ml-auto">
+							<li data-intro="Rate Alert" data-position="bottom" class="nav-item">
+                                <a id="EnjoyHint1" href="Alert.html" class="active" data-ajax='false'><i class="fa fa-bell color-scroll-black" aria-hidden="true" style="font-size:20px;"></i></a>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a href="#" class="active" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil color-white color-scroll-black" aria-hidden="true" style="font-size:20px;"></i></a>
+                            </li>-->
+                            <li class="nav-item">
+                                <a id="EnjoyHint2" href="https://api.whatsapp.com/send?phone=919819942009" class="active"><i class="fa fa-whatsapp color-scroll-black" aria-hidden="true" style="font-size:20px;"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="tel:02261837611" class="active" ><i class="fa fa-phone color-scroll-black" aria-hidden="true" style="font-size:20px;"></i></a> <!--href="tel:022-22428777"-->
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+        <!-- mobile manu  -->
+         <div id="mobile-nav" class="sidenav" data-prevent-default="true" data-mouse-events="true" >
+            <div class="mobile-nav-box">                
+                <ul class="mobile-list-nav">
+                    <li>
+                        <div class="mobile-logo">
+                            <a href="index.html" class="mobile-main-logo color-white">Param Enterprise </a>
+                            <a class="manu-close color-white">MENU <i class="fa fa-arrow-left"></i></a>
+                        </div>
+                    </li>
+
+                    <li><a class="color-navv" href="index.html" data-ajax='false'><i class="fa fa-bar-chart mar_rig_menu"></i>LIVE RATES</a></li>
+                    <li><a class="color-navv" href="Orders.html" data-ajax='false'>PENDING ORDERS</a></li>
+                    <li><a class="color-navv" href="Trades.html" data-ajax='false'><i class="fa fa-book mar_rig_menu"></i>TRADES</a></li>
+                    <li><a class="color-navv" href="Bank_details.html" data-ajax='false'><i class="fa fa-university mar_rig_menu"></i>BANK DETAILS</a></li>
+                    <li><a class="color-navv" href="GoldTrends.html" data-ajax='false'><i class="fa fa-balance-scale mar_rig_menu"></i>GOLD TRENDS</a></li>
+                    <li><a class="color-navv" href="Message.html" data-ajax='false'><i class="fa fa-commenting mar_rig_menu"></i>MESSAGES</a></li>
+                    <li><a class="color-navv" href="BookingDesk.html" data-ajax='false'><i class="fa fa-mobile mar_rig_menu" style="font-size: 18px;"></i>BOOKING DESK</a></li>
+                    <li><a class="color-navv" href="News.html" data-ajax='false'><i class="fa fa-newspaper-o mar_rig_menu"></i>NEWS</a></li>
+                <li><a class="color-navv" href="EconomicCalendar.html" data-ajax='false'><i class="fa fa-calendar-check-o mar_rig_menu"></i>ECONOMIC CALENDAR</a></li>
+                    <li><a class="color-navv" href="AboutUs.html" data-ajax='false'><i class="fa fa-users mar_rig_menu"></i>ABOUT US</a></li>
+                    <li><a class="color-navv" href="Alert.html" data-ajax='false'><i class="fa fa-bell mar_rig_menu"></i>RATE ALERT</a></li>
+                <li><a class="color-navv" href="HistoricalData.html" data-ajax='false'><i class="fa fa-database mar_rig_menu"></i>HISTORICAL DATA</a></li>
+                    <li><a class="color-navv" href="Chart.html" data-ajax='false'><i class="fa fa-line-chart mar_rig_menu"></i>CHART</a></li>
+                    <li><a class="color-navv" href="Margin.html" data-ajax='false'><i class="fa fa-battery-quarter mar_rig_menu"></i>MARGIN</a></li>
+                    <li><a class="color-navv" href="Login.html" data-ajax='false'><i class="fa fa-sign-out mar_rig_menu"></i>LOGIN</a></li>
+
+
+                </ul>           
+        </div>
+    </div>
+    <!-- Navigation Part End -->
+
+
+      </div>
+    </header>
+
+    <div id="mainDiv" style="height:100%">
+    <table style="height:100%;width:100%;">
+    <tr style="height:30%">
+
+    <td>
+
+
+    
+    </td>
+    </tr>
+    <tr style="height:60%">
+    <td>
+    <table id="tblHeader" class="tablestyle" cellspacing="0" cellpadding="0" border="0" style="background-color:#da0000;color:#000000;width:100%;border-collapse:separate;">
+		
+        <thead>
+      
+        <tr class="headerstyle">
+			<th title="Symbol" scope="col" 
+                style="color:white;font-size:9pt;  width:40%; height: 50px; vertical-align: middle;">Symbol</th>
+            <th title="MTM" scope="col" 
+                style="color:white;font-size:9pt; width:30%; height: 50px; vertical-align: middle;">MTM</th>
+            <th title="Net Qty" scope="col" 
+                style="color:white;font-size:9pt;  width:10%; height: 50px; vertical-align: middle;">Net Qty</th>
+                 <th title="Buy Qty" scope="col" 
+                style="color:white;font-size:9pt;  width:10%; height: 50px; vertical-align: middle;">Buy Qty</th>
+                 <th title="Sell Qty" scope="col" 
+                style="color:white;font-size:9pt; width:10%; height: 50px; vertical-align: middle;">Sell Qty</th>
+         <!--<th title="Low" scope="col" 
+                style="color:white;font-size:9pt; background-image: url('bar.png'); background-repeat: repeat-x;" >x</th>-->
+		</tr>
+        </thead>
+       
+        </table>
+  
+    <div id = "wrapper">
+   <div id="scroller">
+  
+  <table id="gvData" class="tablestyle" cellspacing="0" cellpadding="0" border="0" style="color:#000000;width:100%;border-collapse:separate;height:100%">
+	    <tbody>
+        </tbody>
+        </table>
+    </div>
+    </div>
+    </td>
+    
+    </tr>
+    <tr style="height:10%">
+    
+    <td>
+    
+
+    
+    
+    </td>
+    
+    </tr>
+
+    </table>
+
+    </div>
+
+
+
+
+  <footer class="footer" style="background-color:#FFF">
+
+        <div id="EnjoyHint3" data-intro="Menu" data-position="top" class="col-xs-3" style="display: inline-block;">
+            <button class="second-nav-toggler" type="button" style="background: transparent;border: 0;margin-right: 0px;">
+                <!--id="go"-->
+                <!--<i class="fa fa-home" style="color: #FFF !Important;"></i>--> <!--color-white-->
+                <img src="img/sg/menu.png" />
+            </button>
+            <!--<span class="d-block font_footer" style="color:#FFF">Menu</span>-->
+        </div>
+
+        <div class="col-xs-3" style="display: inline-block;">
+            <a href="index.html" data-ajax='false'>
+                <button type="button" style="background: transparent;border: 0;">
+                    <!--id="go"-->
+                    <!--<i class="fa fa-bar-chart" style="color:#000 !Important;"></i>--> <!--color-white-->
+                    <img src="img/sg/live_rates.png" />
+                </button>
+                <!--<span class="d-block font_footer" style="color:#000 !Important;">Live Rates</span>-->
+            </a>
+        </div>
+
+         <div class="col-xs-3" style="display: inline-block;">
+                 <a href="Trades.html" data-ajax='false'> <button type="button" style="background: transparent;border: 0;"> <!--id="go"-->
+                    <!--<i class="fa fa-book" style="color: #FFF !Important;"></i>--> <!--color-white-->
+                    <img src="img/sg/Trades.png" />
+               </button>
+               <!--<span class="d-block font_footer" style="color:#FFF">Trades</span>-->
+               </a>
+            </div>
+
+            <div class="col-xs-3" style="display: inline-block;">
+                  <a href="Bank_details.html" data-ajax='false'><button type="button" style="background: transparent;border: 0;"> 
+                    <img src="img/sg/bank_details.png" />
+               </button>
+               <!--<span class="d-block font_footer" style="color:#FFF">Bank Details</span>-->
+               </a>
+            </div>
+
+             <div class="col-xs-3" style="display: inline-block;">
+                <a href="Login.html" data-ajax='false'><button type="button" style="background: transparent;border: 0;"> <!--id="go"-->
+                    <!--<i class="fa fa-sign-out" style="color: #FFF!Important;"></i>--> <!--color-white-->
+                    <img src="img/sg/login.png" />
+               </button>
+               <!--<span class="d-block font_footer" style="color:#FFF">Login</span>-->
+               </a> 
+            </div>
+
+           <!-- <div data-intro="Latest Gold News" data-position="top" class="col-xs-3" style="display: inline-block;">
+                <div id="divLoginPending">
+			</div>
+            </div>-->
+      
+            
+         
+
+        
+            <div class="col-xs-12 col-md-12" style="display: block;background-color: #22a6dd;    padding: 13px 15px 0px;height: 25px;">
+                <span class="text-muted" style="display: inline-block;float: left;font-size: 11px;">
+                    <p class="nomargin" style="margin-bottom: 0rem;color: #FFF;">© 2019 by SHREE MANDEV BULLION</p>
+                </span>
+
+                <span class="text-muted" style="display: inline-block;float: right;font-size: 11px;">
+                    <p class="nomargin" style="margin-bottom: 0rem;color: #FFF;"></p>
+                </span>
+            </div>
+            
+            <!--<span class="text-muted" style="display: inline-block;float: right;"><p class="nomargin" style="margin-bottom: 0rem;color: #FFF;">Copyright &#169; 2018 - Safari Bullion</p></span>-->
+            <!--<div class="col-lg-6" style="display: inline-block;">
+
+        </div>-->
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <!--<script src="js/popper.min.js" type="text/javascript"></script>-->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!--<script src="js/swiper.min.js" type="text/javascript"></script>-->
+        <script src="js/custom.js" type="text/javascript"></script>
+        <script src="Scripts/jquery-1.11.3.min.js"></script>
+        <script src="Scripts/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>
+         <script type="text/javascript" src="js/index.js"></script>-->
+
+
+       	<script src="js/spin.min.js" type="text/javascript"></script>
+	 <script src="js/Spinner.Chirayu.js" type="text/javascript"></script>
+	 
+	 <script src="js/AJAX-disable.Chirayu.js" type="text/javascript"></script>
+   <script type="text/javascript" src="cordova.js"></script>
+   <script src="js/Alert.Chirayu.js" type="text/javascript"></script>
+         <script type="text/javascript" src="js/index.js"></script>
+
+         <script src="js/online_offline.js" type="text/javascript"></script>
+          <div id="connectiondiv" class="connectiondiv" style=""> 
+            <label align="center" id="connectionmsg" class="connectionmsg">Please check your internet connection</label>
+            <!--<button style="float:right">Reload</button>-->
+            <a id="connectionbtn" onclick="javascript:connectionbtn()" class="retry_connection_btn">Retry</a>
+            </div>
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+  
+  
+   <script>
+
+
+
+        $(document).ready(function () {
+
+
+
+			if (localStorage.username)
+			{
+				
+				var pendingCode = "<a href=\"Orders.html\" data-ajax='false'>" +
+                   "<button type=\"button\" style=\"background: transparent;border: 0;\">" +
+                    "<i class=\"fa fa-pencil-square-o\" style=\"color: #FFF;\"></i>" +
+                      "</button>" + 
+					"<span class=\"d-block font_footer\" style=\"color:#FFF\">Pending</span>" +
+                   "</a>";
+			
+				$("#divLoginPending").html(pendingCode);
+			
+			}
+			else{
+
+				var loginCode = "<a href=\"Login.html\" data-ajax='false'>" +
+                   "<button type=\"button\" style=\"background: transparent;border: 0;\">" +
+                    "<i class=\"fa fa-sign-in\" style=\"color: #FFF;\"></i>" +
+                      "</button>" + 
+					"<span class=\"d-block font_footer\" style=\"color:#FFF\">Login</span>" +
+                   "</a>";
+			
+				$("#divLoginPending").html(loginCode);
+			
+			}
+			
+
+        });
+	
+	
+    </script>
+	
+    <script type="text/javascript">
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // Cordova is loaded and it is now safe to call Cordova methods
+        //
+        function onDeviceReady() {
+            //alert1('onDeviceReady');
+            // Register the event listener
+            document.addEventListener("backbutton", onBackKeyDown, false);
+            document.addEventListener("pause", onPause, false);
+
+            try {
+
+                window.ga.trackView('Net Position');
+            }
+            catch (e) {
+                //alert1("Error: " + e);
+
+            }
+        }
+
+        function onPause() {
+            //e.preventDefault();
+            //navigator.app.exitApp();
+
+        }
+
+        // Handle the back button
+        //
+        function onBackKeyDown() {
+
+            var r = confirm("Do you want to Exit?");
+            if (r == true) {
+                //e.preventDefault();
+                navigator.app.exitApp();
+
+            } else {
+                //do nothing
+            }
+            //alert1('backbutton pressed');
+
+        }
+
+        $(document).ready(function () {
+
+            try {
+
+                startSpinner();
+
+                fnStartClock();
+
+            }
+            catch (err) {
+
+            }
+
+
+        });
+        var maxRows = 0;
+        function fnStartClock() {
+
+            try {
+                oInterval = setInterval("CallWebServiceFromJquery()", 500);
+            }
+            catch (e) {
+                // alert1("fnStartClock" + e);
+            }
+
+
+
+        }
+        function removeRowFromTable() {
+            try {
+                var tbl = document.getElementById('gvData');
+                var lastRow = tbl.rows.length;
+                //alert1(maxRows);
+                if (lastRow > maxRows) {
+                    for (i = parseInt(lastRow, 0); i >= maxRows; i--) {
+
+                        tbl.deleteRow(i - 1);
+                    }
+
+                }
+
+            }
+            catch (e) {
+                // alert1("removeRowFromTable " + e);
+            }
+        }
+      
+        var messages1;
+      
+        function CallWebServiceFromJquery() {
+            try {
+
+                
+
+                    $.ajax({
+                        type: "GET",
+                        url: "http://mobiletradingorder.arihantspot.com:8888/VOTSMobile/Services/xml/getNetPosition/" + window.localStorage.getItem("username") + "/" + window.localStorage.getItem("password") + "",
+                        dataType: "text",
+                        crossDomain: true,
+                        processData: false,
+                        success: OnSuccess,
+                        error: OnError,
+                        cache: false
+                    });
+                
+            }
+            catch (e) {
+                //  alert1("CallWebServiceFromJquery " + e);
+            }
+
+
+        }
+        var oldData;
+        function OnSuccess(data, status) {
+            //alert1(data);
+
+            try {
+                stopSpinner();
+                var messages = data.split("\\u000d\\u000a");
+                removeRowFromTable();
+                var zebra = document.getElementById("gvData");
+                var trow;
+                for (var i = 0; i < messages.length; i++) {
+                    //var ret = jQuery.parseJSON(messages[i]);
+                    var ret = messages[i].split(",");
+                    // alert1(ret);
+                    if (typeof ret[1] != 'undefined') {
+                        var trowString;
+
+                        trowString = "<tr valign=\"middle\" style='color:black;font-size:12pt'><td style='width:40%;border-bottom:1pt solid black;padding-bottom:1em;padding-top:1em;font-size:12pt'>" + ret[1] + "</td>";
+
+                        trowString = trowString + "<td style='width:30%;border-bottom:1pt solid black;padding-bottom:1em;padding-top:1em;color:black;font-size:12pt'>" + ret[3] + "</td>";
+                        trowString = trowString + "<td style='width:10%;border-bottom:1pt solid black;padding-bottom:1em;padding-top:1em;color:black;font-size:12pt'>" + ret[4] + "</td>";
+                        trowString = trowString + "<td style='width:10%;border-bottom:1pt solid black;padding-bottom:1em;padding-top:1em;color:black;font-size:12pt'>" + ret[7] + "</td>";
+                        trowString = trowString + "<td style='width:10%;border-bottom:1pt solid black;padding-bottom:1em;padding-top:1em;color:black;font-size:12pt'>" + ret[10] + "</td>";
+
+
+                        trow = $(trowString);
+
+
+
+                        trow.prependTo(zebra);
+
+                        // alert1(ret[3]);
+                    }
+                }
+
+            }
+            catch (e) {
+                // alert1(e);
+            }
+
+
+        }
+
+
+
+        function OnError(request, status, error) {
+            stopSpinner();
+            // alert1("error : " + error);
+        }
+        var myScroll;
+        function loaded() {
+
+
+            document.getElementById("wrapper").style.height = (window.innerHeight - (100 + 90 + 50)) + "px";
+            //document.getElementById("scroller").style.height = (window.innerHeight - (0.25 * window.innerHeight)) + "px";
+            //document.getElementById("wrapper").style.bottom = "185px";
+
+            myScroll = new iScroll('wrapper', { hScrollbar: false, vScrollbar: true, hideScrollbar: false });
+
+        }
+</script>
+
+
+
+
+    </form>
+
+
+      <!--Model 2-->
+     <div class="modal fade" id="myModal_QuickCall" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content goldblock" style="border: 1px solid rgba(255, 247, 216, 0.63);">   
+                
+                <table width="100%" align="center" style="text-align: center;">
+                    <tr>
+                        <td>
+                            <!--style="padding-bottom: 3%;"-->
+                            <table id="Table11" class="color-white Trending_Table_Child2" width="100%">
+                                
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="color-gold" style="text-align: center;text-decoration: underline;padding: 7px 10px; text-transform: uppercase;">
+                                            Dealing Desk</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left;padding: 7px 10px 7px 70px;"> <!--back_fore_color_td-->
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size:20px; margin-right:5px;"></i> 
+                                            <a class="color-white" href="tel:02261837523">022 61837523</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left;padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size:20px; margin-right:5px;"></i>
+                                            <a class="color-white" href="tel:02261838989">022 61838989</a>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>        
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left;padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-phone color-gold color-scroll-black" aria-hidden="true" style="font-size:20px; margin-right:5px;"></i>
+                                            <a class="color-white" href="tel:+919820769155">+91 9820769155</a>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>        
+                                                          
+                               
+                            </table>
+
+
+                            <table id="Table1" class="color-white Trending_Table_Child2" width="100%">
+                                 <tr>
+                                    <td colspan="2">
+                                        <div class="color-gold" style="text-align: center;text-decoration: underline;padding: 7px 10px;text-transform: uppercase;">
+                                            Accounts and Delivery</div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>
+                                        <div class="" style="text-align: left;padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-briefcase color-gold color-scroll-black" aria-hidden="true" style="font-size:20px; margin-right:5px;"></i>
+                                            <a class="color-white" href="tel:022 61832780">022 61832780</a>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>        
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left;padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-briefcase color-gold color-scroll-black" aria-hidden="true" style="font-size:20px; margin-right:5px;"></i>
+                                            <a class="color-white" href="tel:+91 7738515739">+91 7738515739</a>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>                                  
+                            </table>
+
+                            <table id="Table2" class="color-white Trending_Table_Child2" width="100%">
+                                 <tr>
+                                    <td colspan="2">
+                                        <div class="color-gold" style="text-align: center;text-decoration: underline;padding: 7px 10px;text-transform: uppercase;">
+                                            Gold Coin</div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>
+                                        <div class="" style="text-align: left;padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-balance-scale color-gold color-scroll-black" aria-hidden="true" style="font-size:20px; margin-right:5px;"></i>
+                                            <a class="color-white" href="tel:022 61838993">022 61838993</a>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>        
+                                <tr>
+                                    <td>
+                                        <div class="" style="text-align: left;padding: 7px 10px 7px 70px;">
+                                            <i class="fa fa-balance-scale color-gold color-scroll-black" aria-hidden="true" style="font-size:20px; margin-right:5px;"></i>
+                                            <a class="color-white" href="tel:+91 9869209699">+91 9869209699</a>
+                                        </div>
+                                    </td>
+                                    
+                                </tr>                                  
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+
+                <button type="button" class="close" data-dismiss="modal" style="padding-top: 20px;padding-bottom: 20px; text-decoration: underline;background-color: rgb(1, 20, 27);">
+                    Close &times;</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+

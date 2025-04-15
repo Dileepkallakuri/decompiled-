@@ -1,0 +1,73 @@
+
+
+@media (max-width: 600px){
+    #snackbar {
+       visibility: hidden;
+        /*min-width: 250px;*/
+        z-index: 99999;
+        /*background-color: #fff;*/
+        /*background-color:#50c0ef;*/
+            background-color: #000;
+    border: 3px solid #FFF;
+        color: #FFF;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        width: 86%;
+        left: 7%;
+        bottom: 30px;
+        font-size: 17px;
+    }   	
+}
+@media (min-width: 601px)
+{
+    #snackbar {
+       visibility: hidden;
+        /*min-width: 250px;*/
+        z-index: 99999;
+        background-color: #000;
+        color: #FFF;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        width: 70%;
+        left: 15%;
+        bottom: 30px;
+        font-size: 17px;
+    }
+}
+
+p#Float_Message {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+/*@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}*/
+
+    
